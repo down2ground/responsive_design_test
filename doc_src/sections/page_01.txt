@@ -21,3 +21,86 @@ Squirrels are cute!
 Squirrels are smarts!
 
 Click [here](<!--page page_02-->) to know about cats.
+
+----------------------------------------------------------------------------------------------------
+# Fenced code blocks
+
+Fenced code blocks may be set up by four-space indent, or by four backticks (` ```` `), i.e.
+the following markup:
+
+    ````
+    Example of
+        preformatted 
+        text
+    ````
+
+will look like:
+
+    Example of
+        preformatted 
+        text
+
+This type of block visually correlates with `inline` code fragments. 
+
+Style may be specified the following way:
+
+    ````text
+    This is a light code block example.
+        It is also preformatted
+        but has no background.
+    ````
+
+The result will be:
+
+````text
+This is a light code block example.
+    It is also preformatted
+    but has no background.
+````
+
+There are also shell code block (marked as `shell`):
+
+````shell
+$ echo "This block demonstrates operations in a shell"
+This block demonstrates operations in a shell
+````
+
+and program language code block (marked as `code`):
+
+````code
+System.out.println("This block demonstrates " + 
+    "a source code in a program language.");
+````
+
+!!! note
+    Program language source code syntax highlighting is not implemented yet.
+
+> Fenced blocks may be inserted inside other blocks like `blockquote`s:
+> 
+> ````shell
+> $ echo Fenced blocks inside a blockquote
+> Fenced blocks inside a blockquote
+> ```` 
+> 
+> Also, for instance, lists inside `blockquote`s may contain fenced code blocks:
+> 
+> - Item 1:
+>     ````
+>     Fenced block, line 1
+>     Fenced block, line 2
+>     ````
+> - Item 2
+
+
+## Wrapping
+
+Sometimes it's required to have long lines inside code blocks wrapped, but the above code
+blocks don't wrap the lines automatically. Of cause we can break the lines manually but this 
+may make the content inconvenient for copy-pasting. To address this cases, additional markers
+`wrapped`, `wrapped-code` and `wrapped-shell` were defined. Here's an example:
+
+````wrapped-code
+This is a long line that doesn't contain line breaks inside itself and that we want to be automatically wrapped so that the fenced code block doesn't exceed the page width.
+````
+
+

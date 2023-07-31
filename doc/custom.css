@@ -1,1 +1,16 @@
-/* Write your styles here. */
+html {
+    width: 900px;
+    max-width: 900px;
+}
+
+body {
+    width: 72.22%;
+    margin: 34px 0 0 27.78%;
+}
+
+.sidebar {
+    width: 17.33%;
+}
+
+
+
