@@ -1,0 +1,23 @@
+<!--VARIABLES {"title": "Squirrels", "SORT_ORDER": "010", "code": "page_01"}-->
+
+[TOC]
+
+----------------------------------------------------------------------------------------------------
+# Intro
+
+This page contains some information about squirrels.
+
+Also see [Wikipedia](https://en.wikipedia.org/wiki/Squirrel).
+
+----------------------------------------------------------------------------------------------------
+<!--index ["cute"]-->
+# Shortly speaking
+
+Squirrels are cute!
+
+----------------------------------------------------------------------------------------------------
+# More information
+
+Squirrels are smarts!
+
+Click [here](<!--page page_02-->) to know about cats.

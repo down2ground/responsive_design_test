@@ -1,0 +1,33 @@
+{
+  "readme.html": [
+    {
+      "entry": "Home page",
+      "link": "../../readme.html#index_entry_index_1",
+      "title": "Home"
+    },
+    {
+      "entry": "usage",
+      "link": "../../readme.html#index_entry_index_2",
+      "title": "Home"
+    }
+  ],
+  "doc/content/sections/page_01.html": [
+    {
+      "entry": "cute",
+      "link": "sections/page_01.html#index_entry_index_1",
+      "title": "Squirrels"
+    }
+  ],
+  "doc/content/sections/page_02.html": [
+    {
+      "entry": "cute",
+      "link": "sections/page_02.html#index_entry_index_1",
+      "title": "Cats"
+    },
+    {
+      "entry": "naughty",
+      "link": "sections/page_02.html#index_entry_index_2",
+      "title": "Cats"
+    }
+  ]
+}
