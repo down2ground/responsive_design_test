@@ -36,7 +36,7 @@
             ]}
         },
         "variables": {
-            "logo": "<b><span style=\"color:#59f;margin-right:7px;\">Logo</span></b>",
+            "logo": "<b><span style=\"color:#59f;margin-right:7px;\">Responsive</span></b>",
             "theme": "light_default"
         },
         "index": {"index": {"output": "index_page.html", "title": "Index", "index-cache": "index_cache.json", 
