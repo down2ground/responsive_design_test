@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head><title>Single page</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../layout/styles.css">
+<link rel="stylesheet" type="text/css" href="../themes/light_default_content.css">
+</head>
+<body>
+
+<p><a href="multipage.html">Multipage layout</a> | <a href="singlepage.html">Single page layout</a></p>
+<div class="toc">
+<ul>
+<li><a href="#paragraphs-and-horizontal-lines">Paragraphs and horizontal lines</a></li>
+<li><a href="#lists">Lists</a></li>
+<li><a href="#fenced-blocks">Fenced blocks</a></li>
+<li><a href="#block-quotes">Block quotes</a></li>
+<li><a href="#admonitions">Admonitions</a></li>
+<li><a href="#tables">Tables</a></li>
+<li><a href="#complex-inclusions">Complex inclusions</a><ul>
+<li><a href="#inclusions-in-lists">Inclusions in lists</a></li>
+<li><a href="#inclusions-in-block-quote">Inclusions in block quote</a></li>
+<li><a href="#inclusions-in-admonitions">Inclusions in admonitions</a></li>
+<li><a href="#high-leveled-inclusions">High-leveled inclusions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr />
+<h1 id="paragraphs-and-horizontal-lines">Paragraphs and horizontal lines</h1>
+<p>Paragraphs and horizontal lines must not overflow the page right margin when the page resizes.
+Also their width should not grow over the specified limit.</p>
+<hr />
+<h1 id="lists">Lists</h1>
+<p>Lists must expand to the end of the page and wrap when the text is too long or the window is too
+narrow.</p>
+<ol>
+<li>A first-level ordered list item. A first-level ordered list item. A first-level ordered list item.
+    A first-level  ordered list item.<ul>
+<li>A second-level unordered list sub-item.</li>
+<li>A second-level unordered list sub-item. A second-level unordered list sub-item.
+    A second-level unordered list sub-item.A second-level unordered list sub-item.<ol>
+<li>A third-level ordered list sub-item.</li>
+<li>A third-level ordered list sub-item. A third-level ordered list sub-item.
+    A third-level ordered list sub-item.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h1 id="fenced-blocks">Fenced blocks</h1>
+<pre class="highlight"><code>Short unwrapped preformatted text. This line must NOT be wrapped.</code></pre>
+<pre class="highlight"><code class="language-code">Long unwrapped preformatted text. This line must NOT be wrapped when the text is too long or the window is too narrow.</code></pre>
+<pre class="highlight"><code class="language-wrapped-shell">Long wrapped preformatted text. This line MUST be wrapped when the text is too long or the window is too narrow.</code></pre>
+<hr />
+<h1 id="block-quotes">Block quotes</h1>
+<blockquote>
+<p>Block quote content must be wrapped when the text is too long or the window is too narrow.
+Again, when the text is too long or the window is too narrow.</p>
+</blockquote>
+<hr />
+<h1 id="admonitions">Admonitions</h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Admonition content must be wrapped when the text is too long or the window is too narrow.
+Again, when the text is too long or the window is too narrow.</p>
+</div>
+<hr />
+<h1 id="tables">Tables</h1>
+<p>The following table not must exceed the page width.</p>
+<table>
+<thead>
+<tr>
+<th>Header title</th>
+<th>Quite long header title</th>
+<th>One more header title</th>
+<th>Yet another header title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Outset row 1</td>
+<td>Cell content</td>
+<td>Cell content</td>
+<td>Cell content</td>
+</tr>
+<tr>
+<td>Outset row 2</td>
+<td>Longer cell content</td>
+<td>Even longer cell content</td>
+<td>Cell content</td>
+</tr>
+</tbody>
+</table>
+<p>The following table is wide enough and must be restricted in width.</p>
+<table>
+<thead>
+<tr>
+<th>Header title</th>
+<th>Quite long header title</th>
+<th>One more header title</th>
+<th>Yet another header title</th>
+<th>This header title must exceed the limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Outset row 1</td>
+<td>Cell content</td>
+<td>Cell content</td>
+<td>Cell content</td>
+<td>This cell content must exceed the limit</td>
+</tr>
+<tr>
+<td>Outset row 2</td>
+<td>Longer cell content</td>
+<td>Even longer cell content</td>
+<td>Cell content</td>
+<td>This cell content must exceed the limit</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="complex-inclusions">Complex inclusions</h1>
+<h2 id="inclusions-in-lists">Inclusions in lists</h2>
+<ul>
+<li>Unwrapped code block:
+    <pre class="highlight"><code class="language-code">System.out.println("Unwrapped code block. Must NOT be wrapped.");</code></pre></li>
+<li>Wrapped code block:
+    <pre class="highlight"><code class="language-wrapped-code">System.out.println("Wrapped code block. MUST be wrapped when the text is too long or the window is too narrow.");</code></pre></li>
+<li>
+<p>Inclusions into nested list items:</p>
+<ol>
+<li>Code block:
+    <pre class="highlight"><code class="language-wrapped-code">System.out.println("Wrapped code block. MUST be wrapped.");</code></pre></li>
+<li>
+<p>Table:</p>
+<table>
+<thead>
+<tr>
+<th>Header title</th>
+<th>Quite long header title</th>
+<th>One more header title</th>
+<th>Yet another header title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Outset row 1</td>
+<td>Cell content</td>
+<td>Cell content</td>
+<td>Cell content</td>
+</tr>
+<tr>
+<td>Outset row 2</td>
+<td>Longer cell content</td>
+<td>Even longer cell content</td>
+<td>Cell content</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Admonition:</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Admonition with a short content.</p>
+</div>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="inclusions-in-block-quote">Inclusions in block quote</h2>
+<p><strong>Block quote with block quote inside:</strong></p>
+<blockquote>
+<p>Block quote may contain other block quotes. A short content:</p>
+<blockquote>
+<p>Block quote with a short content.</p>
+</blockquote>
+<p>A long content:</p>
+<blockquote>
+<p>Block quote with a long content. Block quote with a long content. Block quote with a long content.
+Block quote with a long content. Block quote with a long content.</p>
+</blockquote>
+</blockquote>
+<p><strong>Block quote with fenced blocks inside:</strong></p>
+<blockquote>
+<pre class="highlight"><code class="language-shell">$ echo "Unwrapped fenced blocks. Must NOT be wrapped."</code></pre>
+<pre class="highlight"><code class="language-wrapped-shell">$ echo "Wrapped fenced blocks. MUST be wrapped when the text is too long or the window is too narrow."</code></pre>
+</blockquote>
+<p><strong>Block quote with admonition inside:</strong></p>
+<blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Admonition with a long content. Must be wrapped. Must be wrapped. Must be wrapped.
+Must be wrapped. Must be wrapped. Must be wrapped. Must be wrapped. Must be wrapped.</p>
+</div>
+</blockquote>
+<p><strong>Block quote with a list inside.</strong> The list in its turn contains other formatting elements.</p>
+<blockquote>
+<p>Following is a list:</p>
+<ul>
+<li>Unwrapped code block:
+    <pre class="highlight"><code class="language-code">System.out.println("Unwrapped code block. Must NOT be wrapped.");</code></pre></li>
+<li>Wrapped code block:
+    <pre class="highlight"><code class="language-wrapped-code">System.out.println("Wrapped code block. MUST be wrapped when the text is too long or the window is too narrow.");</code></pre></li>
+<li>
+<p>Inclusions into nested list items:</p>
+<ol>
+<li>Code block:
+    <pre class="highlight"><code class="language-wrapped-code">System.out.println("Wrapped code block. MUST be wrapped.");</code></pre></li>
+<li>
+<p>Table:</p>
+<table>
+<thead>
+<tr>
+<th>Header title</th>
+<th>Quite long header title</th>
+<th>One more header title</th>
+<th>Yet another header title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Outset row 1</td>
+<td>Cell content</td>
+<td>Cell content</td>
+<td>Cell content</td>
+</tr>
+<tr>
+<td>Outset row 2</td>
+<td>Longer cell content</td>
+<td>Even longer cell content</td>
+<td>Cell content</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Admonition:</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Admonition with a short content.</p>
+</div>
+</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<h2 id="inclusions-in-admonitions">Inclusions in admonitions</h2>
+<p><strong>Admonition with block quote inside:</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Admonition may contain block quotes. A short content:</p>
+<blockquote>
+<p>Block quote with a short content.</p>
+</blockquote>
+<p>A long content:</p>
+<blockquote>
+<p>Block quote with a long content. Block quote with a long content. Block quote with a long content.
+Block quote with a long content. Block quote with a long content.</p>
+</blockquote>
+</div>
+<p><strong>Admonition with fenced blocks inside:</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<pre class="highlight"><code class="language-shell">$ echo "Unwrapped fenced blocks. Must NOT be wrapped."</code></pre>
+<pre class="highlight"><code class="language-wrapped-shell">$ echo "Wrapped fenced blocks. MUST be wrapped when the text is too long or the window is too narrow."</code></pre>
+</div>
+<p><strong>Admonition with admonition inside:</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Following is an admonition.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Admonition with a long content. Must be wrapped. Must be wrapped. Must be wrapped.
+Must be wrapped. Must be wrapped. Must be wrapped. Must be wrapped. Must be wrapped.</p>
+</div>
+</div>
+<p><strong>Admonition with a list inside.</strong> The list in its turn contains other formatting elements.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Following is a list:</p>
+<ul>
+<li>Unwrapped code block:
+    <pre class="highlight"><code class="language-code">System.out.println("Unwrapped code block. Must NOT be wrapped.");</code></pre></li>
+<li>
+<p>Wrapped code block:</p>
+<pre class="highlight"><code class="language-wrapped-code">System.out.println("Wrapped code block. MUST be wrapped when the text is too long or the window is too narrow.");</code></pre>
+</li>
+<li>
+<p>Inclusions into nested list items:</p>
+<ol>
+<li>
+<p>Code block:</p>
+<pre class="highlight"><code class="language-wrapped-code">System.out.println("Wrapped code block. MUST be wrapped.");</code></pre>
+</li>
+<li>
+<p>Table:</p>
+<table>
+<thead>
+<tr>
+<th>Header title</th>
+<th>Quite long header title</th>
+<th>One more header title</th>
+<th>Yet another header title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Outset row 1</td>
+<td>Cell content</td>
+<td>Cell content</td>
+<td>Cell content</td>
+</tr>
+<tr>
+<td>Outset row 2</td>
+<td>Longer cell content</td>
+<td>Even longer cell content</td>
+<td>Cell content</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Admonition:</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Admonition with a short content. Admonition with a short content.</p>
+</div>
+</li>
+</ol>
+</li>
+</ul>
+</div>
+<h2 id="high-leveled-inclusions">High-leveled inclusions</h2>
+<ul>
+<li>Inclusions into a list item:<ol>
+<li>
+<p>Admonition:</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Included list:</p>
+<ul>
+<li>
+<p>Item containing other elements:</p>
+<blockquote>
+<p>Block quote containing some other elements:</p>
+<ul>
+<li>
+<p>Item containing other elements:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Admonition.</p>
+<ul>
+<li>
+<p>Item containing other elements:</p>
+<pre class="highlight"><code>Preformatted text.</code></pre>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ul>
+
+<hr />
+<p style="font-size: smaller; color: dimgray;">Generated by
+<a href="https://github.com/arctrong/md2html">md2html_py</a>
+1.0.5</p>
+</body>
+</html>

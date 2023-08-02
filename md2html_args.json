@@ -10,11 +10,25 @@
         "verbose": true
     },
     "documents": [
-        { "input-root": "", "output-root": "", "input": "readme.txt", "title": "Home", 
+        { "input-root": "", "output-root": "", "input": "readme.txt", "title": "Home",
             "page-flows": ["sections", "nav"] },
-        { "input-glob": "sections/*.txt", "page-flows": ["sections", "nav"], 
-            "title-from-variable": "title", "code-from-variable": "code", 
-            "sort-by-variable": "SORT_ORDER" }
+            
+        { "input": "sections/content.txt", "output": "multipage.html", "title": "Multipage",
+            "page-flows": ["sections", "nav"] },
+
+        { "input": "sections/content.txt", "output": "singlepage.html", "title": "Single page",
+            "page-flows": ["sections", "nav"],
+            "template": "doc_src/templates/default.html",
+            "link-css": ["doc/layout/styles.css", "doc/themes/light_default_content.css"]
+        },
+        
+        { "input": "sections/dummy_index_content.txt", "title": "Dummy index content",
+            "page-flows": ["sections", "nav"] }
+            
+#        { "input-glob": "sections/*.txt", "page-flows": ["sections", "nav"], 
+#            "title-from-variable": "title", "code-from-variable": "code", 
+#            "sort-by-variable": "SORT_ORDER" }
+
     ],
     "plugins": {
         "relative-paths": {

@@ -10,14 +10,15 @@
     <span style="font-weight: bold; margin: 0 5px;">Title1</span>
     <span style="font-weight: bold; margin: 0 5px;">Title2</span>
     <span style="font-weight: bold; margin: 0 5px;">Title3</span>
+    <button type="button" id="toggleLayout" onclick="toggleLayout();return false;">Layout</button>
 </div>
 
 <div class="sidebar">
     <table class="sidebarAligner">
         <tr><td valign="top">
-            <span>Item1</span>
-            <span>Item2</span>
-            <span>Item3</span>
+            <div>Item1</div>
+            <div>Item2</div>
+            <div>Item3</div>
         </td></tr>
         <tr><td class="bottom" valign="bottom">
             Some technical info
@@ -25,12 +26,21 @@
     </table>
 </div>
 
-<h1 id="fenced-code-blocks">Fenced code blocks</h1>
-<p>Fenced code blocks may be set up by four-space indent:</p>
+<hr />
+<h1 id="fenced-code-blocks">Paragraphs and horizontal lines</h1>
+<p>Paragraphs and horizontal lines must not overflow the page right margin when the page resizes.
+Also their width should not grow over the specified limit.</p>
 
+<hr />
+<h1 id="fenced-code-blocks">Fenced blocks</h1>
 <pre><code>Example of
     preformatted 
-    text
+    text.
+    This line must not be wrapped. Parent block must have a horizontal scroll.
+</code></pre>
+
+<pre><code class="language-wrapped">Preformatted text.
+    This line must be wrapped when the text is too long or the window is too narrow.
 </code></pre>
 
 <p>There is also shell code block:</p>
@@ -40,7 +50,8 @@ This block demonstrates operations in a shell</code></pre>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Program language source code syntax highlighting is not implemented yet.</p>
+<p>Admonition content must be wrapped when the text is too long or the window is too narrow.
+Again, when the text is too long or the window is too narrow.</p>
 </div>
 
 <blockquote>
@@ -54,8 +65,12 @@ Fenced blocks inside a blockquote</code></pre>
 Fenced block, line 2</code></pre></li>
 <li>Item 2</li>
 </ul>
+<p>And what if we add a very long text here. A very long text. A very long text. A very long text.
+A very long text. A very long text. A very long text. A very long text. A very long text.
+A very long text. A very long text. A very long text. A very long text. A very long text. </p>
 </blockquote>
 
+<hr />
 <h2 id="wrapping">Wrapping</h2>
 <p>Sometimes it's required to have long lines inside code blocks wrapped, but the above code
 blocks don't wrap the lines automatically. Of cause we can break the lines manually but this 
@@ -65,6 +80,34 @@ may make the content inconvenient for copy-pasting. To address this cases, addit
 
 <p>&nbsp;</p>
 <hr />
+
+<script>
+var isMultipageLayout = true
+var multipageLeftMargin = "250px"
+var singleLeftMargin = "0"
+
+function setToggleLayoutButtonTitle() {
+    document.getElementById("toggleLayout").innerText = isMultipageLayout ? 
+        "Switch to single page" :
+        "Switch to multi page"
+}
+
+function toggleLayout() {
+    if (isMultipageLayout) {
+        document.body.style["margin-left"] = singleLeftMargin
+        document.getElementsByClassName("sidebar")[0].style.display = "none"
+        isMultipageLayout = false
+    } else {
+        document.body.style["margin-left"] = multipageLeftMargin
+        document.getElementsByClassName("sidebar")[0].style.display = "block"
+        isMultipageLayout = true
+    }
+    setToggleLayoutButtonTitle()
+}
+
+setToggleLayoutButtonTitle()
+
+</script>
 
 </body>
 </html>

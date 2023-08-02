@@ -1,17 +1,17 @@
 html {
-    width: 900px;
+    /* width: 900px; */
     font-size: 18px;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 body {
-    width: 100%;
+    /* width: 100%; */
     margin-left: 50px;
     margin-right: 50px;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
-    max-width: 900px;
+    /* max-width: 900px; */
 }
 
 li {
@@ -25,9 +25,11 @@ ul, ol {
 hr {
     height: 1px;
     border: 0px;
-    width: 899px;
-    margin-left: 0px;
-    text-align: left;
+    width: 100%;
+    /* width: 899px; */
+    /* margin-left: 0px; */
+    /* text-align: left; */
+    background: cadetblue;
 }
 
 h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
@@ -49,7 +51,7 @@ code, .code {
 pre>code, div.code {
     font-size: 16px;
     display: block;
-    width: 48.778rem;
+    /* width: 48.778rem; */
     min-width: max-content;
     line-height: 1.4;
     border-radius: 0;
@@ -76,10 +78,11 @@ pre>code.language-wrapped-shell, pre>code.language-wrapped-code {
 
 blockquote {
     margin-left: 0;
+    margin-right: 0px;
     padding: 1px 10px;
     font-size: 16px;
-    width: 868px;
-    min-width: max-content;
+    /* width: 868px; */
+    /* min-width: max-content; */
     border-style: solid;
     border-width: 1px 1px 1px 10px;
 }
@@ -89,11 +92,12 @@ blockquote *, div.admonition * {
 }
 
 blockquote, div.admonition {
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow-x: auto;
 }
 
 blockquote pre>code {
-    width: 847px;
+    /* width: 847px; */
 }
 
 div.admonition pre>code {
@@ -101,7 +105,7 @@ div.admonition pre>code {
 }
 
 blockquote li pre code {
-    width: 808px;
+    /* width: 808px; */
 }
 
 table {
@@ -131,8 +135,8 @@ div.admonition {
     margin-left: 0;
     padding: 0;
     font-size: 16px;
-    width: 898px;
-    min-width: max-content;
+    /* width: 898px; */
+    /* min-width: max-content; */
     border-style: solid;
     border-width: 1px;
 }
@@ -164,7 +168,7 @@ li>blockquote {
 }
 
 li>pre>code {
-    width: 838px;
+    /* width: 838px; */
 }
 
 img.floatRight {
@@ -177,7 +181,10 @@ img.floatRight {
 
 
 body {
-    margin:34px 0 0 250px;
+    margin-top: 34px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 250px;
     padding:20px;
 }
 
@@ -274,5 +281,17 @@ div.sidebar h4::before, div.sidebar h5::before, div.sidebar h6::before {
 .sidebar {
     background-color: lemonchiffon;
 }
+
+body {
+    max-width: 900px;
+}
+
+p {
+    background-color: honeydew;
+}
+
+
+
+
 
 

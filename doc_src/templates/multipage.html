@@ -11,6 +11,7 @@
 <link rel="stylesheet" type="text/css" href="{{resource_path}}layout/layout.css"/>
 <link rel="stylesheet" type="text/css" href="{{resource_path}}themes/{{theme}}_layout.css"/>
 {{{styles}}}
+<link rel="stylesheet" type="text/css" href="{{resource_path}}layout/flex.css"/>
 <link rel="stylesheet" type="text/css" href="{{resource_path}}custom.css"/>
 <style>
 .headerNavArrows {position: relative; top: 3px;}
@@ -18,7 +19,9 @@
 </head>
 <body>
 
-<div class="header">{{{logo}}}{{#header}}<a 
+<div class="header">
+<span id="sidebarActivator" class="header_item">Content</span>
+{{{logo}}}{{#header}}<a 
 class="header_item{{#current}} selected{{/current}}" href="{{link}}">{{title}}</a>{{/header}}
 
 {{#source_file}}<a href="{{.}} " class="header_item_source" title="Source text">&lt;/&gt;</a>{{/source_file}}

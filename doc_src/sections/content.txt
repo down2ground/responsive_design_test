@@ -1,0 +1,260 @@
+<!--VARIABLES {"SORT_ORDER": "010", "code": "multipage"}-->
+
+[Multipage layout](multipage.html) | [Single page layout](singlepage.html)
+
+[TOC]
+
+----------------------------------------------------------------------------------------------------
+# Paragraphs and horizontal lines
+
+Paragraphs and horizontal lines must not overflow the page right margin when the page resizes.
+Also their width should not grow over the specified limit.
+
+----------------------------------------------------------------------------------------------------
+# Lists
+
+Lists must expand to the end of the page and wrap when the text is too long or the window is too
+narrow.
+
+1. A first-level ordered list item. A first-level ordered list item. A first-level ordered list item.
+    A first-level  ordered list item.
+    - A second-level unordered list sub-item.
+    - A second-level unordered list sub-item. A second-level unordered list sub-item.
+        A second-level unordered list sub-item.A second-level unordered list sub-item.
+        1. A third-level ordered list sub-item.
+        1. A third-level ordered list sub-item. A third-level ordered list sub-item.
+            A third-level ordered list sub-item.
+
+----------------------------------------------------------------------------------------------------
+# Fenced blocks
+
+````
+Short unwrapped preformatted text. This line must NOT be wrapped.
+````
+
+````code
+Long unwrapped preformatted text. This line must NOT be wrapped when the text is too long or the window is too narrow.
+````
+
+````wrapped-shell
+Long wrapped preformatted text. This line MUST be wrapped when the text is too long or the window is too narrow.
+````
+
+----------------------------------------------------------------------------------------------------
+# Block quotes
+
+> Block quote content must be wrapped when the text is too long or the window is too narrow.
+> Again, when the text is too long or the window is too narrow.
+
+----------------------------------------------------------------------------------------------------
+# Admonitions
+
+!!! note
+    Admonition content must be wrapped when the text is too long or the window is too narrow.
+    Again, when the text is too long or the window is too narrow.
+
+----------------------------------------------------------------------------------------------------
+# Tables
+
+The following table not must exceed the page width.
+
+Header title | Quite long header title | One more header title    | Yet another header title
+-------------|-------------------------|--------------------------|-------------------------
+Outset row 1 | Cell content            | Cell content             | Cell content
+Outset row 2 | Longer cell content     | Even longer cell content | Cell content
+
+The following table is wide enough and must be restricted in width.
+
+Header title | Quite long header title | One more header title    | Yet another header title | This header title must exceed the limit
+-------------|-------------------------|--------------------------|--------------------------|-------------------------
+Outset row 1 | Cell content            | Cell content             | Cell content             | This cell content must exceed the limit
+Outset row 2 | Longer cell content     | Even longer cell content | Cell content             | This cell content must exceed the limit
+
+----------------------------------------------------------------------------------------------------
+# Complex inclusions
+
+## Inclusions in lists
+
+- Unwrapped code block:
+    ````code
+    System.out.println("Unwrapped code block. Must NOT be wrapped.");
+    ````
+- Wrapped code block:
+    ````wrapped-code
+    System.out.println("Wrapped code block. MUST be wrapped when the text is too long or the window is too narrow.");
+    ````
+- Inclusions into nested list items:
+    1. Code block:
+        ````wrapped-code
+        System.out.println("Wrapped code block. MUST be wrapped.");
+        ````
+    1. Table:
+
+        Header title | Quite long header title | One more header title    | Yet another header title
+        -------------|-------------------------|--------------------------|-------------------------
+        Outset row 1 | Cell content            | Cell content             | Cell content
+        Outset row 2 | Longer cell content     | Even longer cell content | Cell content
+
+    1. Admonition:
+
+        !!! tip
+            Admonition with a short content.
+
+
+## Inclusions in block quote
+
+**Block quote with block quote inside:**
+
+> Block quote may contain other block quotes. A short content:
+> 
+> > Block quote with a short content.
+> 
+> A long content:
+> 
+> > Block quote with a long content. Block quote with a long content. Block quote with a long content.
+> > Block quote with a long content. Block quote with a long content.
+
+**Block quote with fenced blocks inside:**
+
+> ````shell
+> $ echo "Unwrapped fenced blocks. Must NOT be wrapped."
+> ```` 
+> 
+> ````wrapped-shell
+> $ echo "Wrapped fenced blocks. MUST be wrapped when the text is too long or the window is too narrow."
+> ```` 
+
+**Block quote with admonition inside:**
+
+> !!! note
+>     Admonition with a long content. Must be wrapped. Must be wrapped. Must be wrapped.
+>     Must be wrapped. Must be wrapped. Must be wrapped. Must be wrapped. Must be wrapped.
+
+**Block quote with a list inside.** The list in its turn contains other formatting elements.
+
+> Following is a list:
+> 
+> - Unwrapped code block:
+>     ````code
+>     System.out.println("Unwrapped code block. Must NOT be wrapped.");
+>     ````
+> - Wrapped code block:
+>     ````wrapped-code
+>     System.out.println("Wrapped code block. MUST be wrapped when the text is too long or the window is too narrow.");
+>     ````
+> - Inclusions into nested list items:
+>     1. Code block:
+>         ````wrapped-code
+>         System.out.println("Wrapped code block. MUST be wrapped.");
+>         ````
+>     1. Table:
+> 
+>         Header title | Quite long header title | One more header title    | Yet another header title
+>         -------------|-------------------------|--------------------------|-------------------------
+>         Outset row 1 | Cell content            | Cell content             | Cell content
+>         Outset row 2 | Longer cell content     | Even longer cell content | Cell content
+> 
+>     1. Admonition:
+> 
+>         !!! tip
+>             Admonition with a short content.
+
+
+## Inclusions in admonitions
+
+**Admonition with block quote inside:**
+
+!!! note
+    Admonition may contain block quotes. A short content:
+    
+    > Block quote with a short content.
+    
+    A long content:
+    
+    > Block quote with a long content. Block quote with a long content. Block quote with a long content.
+    > Block quote with a long content. Block quote with a long content.
+
+**Admonition with fenced blocks inside:**
+
+!!! note
+    ````shell
+    $ echo "Unwrapped fenced blocks. Must NOT be wrapped."
+    ```` 
+    
+    ````wrapped-shell
+    $ echo "Wrapped fenced blocks. MUST be wrapped when the text is too long or the window is too narrow."
+    ````
+
+**Admonition with admonition inside:**
+
+!!! note
+    Following is an admonition.
+    
+    !!! attention
+        Admonition with a long content. Must be wrapped. Must be wrapped. Must be wrapped.
+        Must be wrapped. Must be wrapped. Must be wrapped. Must be wrapped. Must be wrapped.
+
+**Admonition with a list inside.** The list in its turn contains other formatting elements.
+
+!!! note
+    Following is a list:
+    
+    - Unwrapped code block:
+        ````code
+        System.out.println("Unwrapped code block. Must NOT be wrapped.");
+        ````
+    - Wrapped code block:
+    
+        ````wrapped-code
+        System.out.println("Wrapped code block. MUST be wrapped when the text is too long or the window is too narrow.");
+        ````
+        
+    - Inclusions into nested list items:
+        1. Code block:
+        
+            ````wrapped-code
+            System.out.println("Wrapped code block. MUST be wrapped.");
+            ````
+            
+        1. Table:
+    
+            Header title | Quite long header title | One more header title    | Yet another header title
+            -------------|-------------------------|--------------------------|-------------------------
+            Outset row 1 | Cell content            | Cell content             | Cell content
+            Outset row 2 | Longer cell content     | Even longer cell content | Cell content
+    
+        1. Admonition:
+    
+            !!! tip
+                Admonition with a short content. Admonition with a short content.
+
+
+## High-leveled inclusions
+
+- Inclusions into a list item:
+    1. Admonition:
+
+        !!! tip
+            Included list:
+            
+            - Item containing other elements:
+                
+                > Block quote containing some other elements:
+                > 
+                > - Item containing other elements:
+                > 
+                >     !!! note
+                >         Admonition.
+                >         
+                >         - Item containing other elements:
+                >     
+                >             ````
+                >             Preformatted text.
+                >             ````
+
+
+
+
+
+
+

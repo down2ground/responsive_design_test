@@ -1,0 +1,16 @@
+@media screen and (max-width: 850px) {
+    .sidebar {
+        display: none;
+    }
+    body {
+        margin-left: 0px;
+    }
+    #sidebarActivator {
+        display: inline;
+    }
+    div.index-content {
+        column-count: 1;
+    }
+}
+
+
