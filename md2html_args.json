@@ -19,7 +19,8 @@
         { "input": "sections/content.txt", "output": "singlepage.html", "title": "Single page",
             "page-flows": ["sections", "nav"],
             "template": "doc_src/templates/default.html",
-            "link-css": ["doc/layout/styles.css", "doc/themes/light_default_content.css"]
+            "link-css": ["doc/layout/styles.css", "doc/themes/light_default_content.css",
+                "doc/layout/flex.css"]
         },
         
         { "input": "sections/dummy_index_content.txt", "title": "Dummy index content",
