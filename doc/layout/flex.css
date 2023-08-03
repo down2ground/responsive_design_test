@@ -21,6 +21,9 @@
     .sidebar {
         bottom: unset;
     }
+    .hideInCompactMode {
+        display: none;
+    }
 }
 
 

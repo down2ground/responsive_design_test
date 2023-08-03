@@ -23,9 +23,13 @@
 
 <div class="header">
 <img id="burger" src="{{resource_path}}/layout/pict/burger.png" onclick="toggleSidebar();return false;" />
-{{{logo}}}{{#header}}<a 
-class="header_item{{#current}} selected{{/current}}" href="{{link}}">{{title}}</a>{{/header}}
-
+{{{logo}}}{{#header_page_links}}<a 
+class="header_item{{#current}} selected{{/current}} hideInCompactMode" 
+href="{{link}}">{{title}}</a>{{/header_page_links}}{{#header}}<a 
+class="header_item{{#current}} selected{{/current}}" 
+href="{{link}}">{{title}}</a>{{/header}}{{#header_additional_links}}<a 
+class="header_item{{#current}} selected{{/current}} hideInCompactMode" 
+href="{{link}}">{{title}}</a>{{/header_additional_links}}
 {{#source_file}}<a href="{{.}} " class="header_item_source" title="Source text">&lt;/&gt;</a>{{/source_file}}
 {{^source_file}}<span class="header_item_source inactive">&lt;/&gt;</span>{{/source_file}}
 

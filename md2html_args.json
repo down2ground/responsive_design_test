@@ -42,10 +42,14 @@
         "page-flows": {
             "sections": { "groups": ["sidebar"] },
             "header": [
-                { "link": "readme.html", "title": "Home" },
-                { "link": "doc/content/index_page.html", "title": "Index" },
-                { "link": "https://github.com/arctrong/responsive_design_test", "title": "GitHub", "external": true }
+                { "link": "doc/content/index_page.html", "title": "Index" }
             ],
+             "header_page_links": [
+                { "link": "readme.html", "title": "Home" }
+            ],
+            "header_additional_links": { "title": " ", "groups": ["sidebar"], "items": [
+                { "link": "https://github.com/arctrong/responsive_design_test", "title": "GitHub", "external": true }
+            ]},
             "useful_links": { "title": "Useful links", "groups": ["sidebar"], "items": [
                 { "link": "https://daringfireball.net/projects/markdown/", "title": "Markdown", "external": true },
                 { "link": "https://github.com/arctrong/md2html", "title": "md2html", "external": true }
