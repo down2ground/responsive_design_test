@@ -31,4 +31,8 @@ implementation.
 
 - If possible improve look and feel on mobile devices.
 
+- Look at the admonition problem:
+
+    ![](<!--path pict-->admonition_problem.png)
+
 
