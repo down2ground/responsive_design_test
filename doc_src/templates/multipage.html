@@ -15,7 +15,7 @@
 <link rel="stylesheet" type="text/css" href="{{resource_path}}layout/flex.css"/>
 <link rel="stylesheet" type="text/css" href="{{resource_path}}custom.css"/>
 <style>
-.headerNavArrows {position: relative; top: 3px;}
+.headerNavArrows {position: relative; top: 4px;}
 #burger {position: relative; top: 4px; margin-right: 10px;}
 </style>
 </head>
@@ -33,10 +33,10 @@ href="{{link}}">{{title}}</a>{{/header_additional_links}}
 {{#source_file}}<a href="{{.}} " class="header_item_source" title="Source text">&lt;/&gt;</a>{{/source_file}}
 {{^source_file}}<span class="header_item_source inactive">&lt;/&gt;</span>{{/source_file}}
 
-{{#nav.previous}}<a href="{{link}}" title="Previous: {{title}}"><img class="headerNavArrows" src="{{resource_path}}layout/pict/previous_page_h18px.png"/></a>{{/nav.previous}}
-{{^nav.previous}}<img class="headerNavArrows" src="{{resource_path}}layout/pict/previous_page_h18px_inactive.png"/>{{/nav.previous}}
-{{#nav.next}}<a href="{{link}}" title="Next: {{title}}"><img class="headerNavArrows" src="{{resource_path}}layout/pict/next_page_h18px.png"/></a>{{/nav.next}}
-{{^nav.next}}<img class="headerNavArrows" src="{{resource_path}}layout/pict/next_page_h18px_inactive.png"/>{{/nav.next}}
+{{#nav.previous}}<a href="{{link}}" title="Previous: {{title}}"><img class="headerNavArrows" src="{{resource_path}}layout/pict/previous_page_h21px.png"/></a>{{/nav.previous}}
+{{^nav.previous}}<img class="headerNavArrows" src="{{resource_path}}layout/pict/previous_page_h21px_inactive.png"/>{{/nav.previous}}
+{{#nav.next}}<a href="{{link}}" title="Next: {{title}}"><img class="headerNavArrows" src="{{resource_path}}layout/pict/next_page_h21px.png"/></a>{{/nav.next}}
+{{^nav.next}}<img class="headerNavArrows" src="{{resource_path}}layout/pict/next_page_h21px_inactive.png"/>{{/nav.next}}
 
 <span class="headerTitle">{{title}}</span>
 
