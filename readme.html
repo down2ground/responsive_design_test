@@ -1,11 +1,11 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html>
 <head><title>Home</title>
 <meta charset="utf-8">
 <link rel="shortcut icon" type="image/png" href="doc/favicon.png"/>
 
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 
 <link rel="stylesheet" type="text/css" href="doc/layout/styles.css"/>
 <link rel="stylesheet" type="text/css" href="doc/themes/light_default_content.css"/>
@@ -65,12 +65,31 @@ class="header_item" href="https://github.com/arctrong/responsive_design_test">Gi
 <div class="toc">
 <ul>
 <li><a href="#whats-that">What's that</a></li>
+<li><a href="#status-and-problems">Status and problems</a></li>
 </ul>
 </div>
 <p style="clear: both;"></p>
 
 <h1 id="whats-that">What's that</h1>
 <p>Attempt of creating responsive documentation design.</p>
+<h1 id="status-and-problems">Status and problems</h1>
+<p>The solution works much better that it did. But it needs more study of HTML flexible design 
+implementation.</p>
+<ul>
+<li>
+<p>The following setting:</p>
+<pre class="highlight"><code class="language-wrapped">&lt;meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"&gt;</code></pre>
+<p>in files <code>doc_src/templates/multipage.html</code> and <code>doc/layout/styles.css</code>.</p>
+</li>
+<li>
+<p>The best practices in activating and deactivating of the sidebar. Now it's done using
+    JavaScript but probably pure CSS would be better. Also see
+    <a href="https://codepen.io/markcaron/pen/wdVmpB">here</a>.</p>
+</li>
+<li>
+<p>If possible improve look and feel on mobile devices.</p>
+</li>
+</ul>
 <p>&nbsp;</p>
 <hr />
 
