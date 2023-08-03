@@ -12,6 +12,13 @@
 Attempt of creating responsive documentation design.
 
 
+# Materials
+
+- W3Schools: [HTML Responsive Web Design](https://www.w3schools.com/html/html_responsive.asp)
+- W3Schools: [Responsive Web Design - The Viewport](https://www.w3schools.com/css/css_rwd_viewport.asp)
+- MDN: [Viewport concepts](https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts)
+
+
 # Status and problems
 
 The solution works much better that it did. But it needs more study of HTML flexible design 
@@ -34,5 +41,9 @@ implementation.
 - Look at the admonition problem:
 
     ![](<!--path pict-->admonition_problem.png)
+    
+- Drop down menu is not scrolled if exceeds the page height:
+
+    ![](<!--path pict-->menu_dropdown_problem.png)
 
 
