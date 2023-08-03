@@ -15,6 +15,12 @@
         float: unset;
         margin: unset;
     }
+    table.sidebarAligner {
+        height: unset;
+    }
+    .sidebar {
+        bottom: unset;
+    }
 }
 
 
