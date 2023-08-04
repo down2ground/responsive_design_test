@@ -17,6 +17,8 @@ Attempt of creating responsive documentation design.
 - W3Schools: [HTML Responsive Web Design](https://www.w3schools.com/html/html_responsive.asp)
 - W3Schools: [Responsive Web Design - The Viewport](https://www.w3schools.com/css/css_rwd_viewport.asp)
 - MDN: [Viewport concepts](https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts)
+- Youtube: [Introduction To Responsive Web Design - HTML & CSS Tutorial](
+    https://www.youtube.com/watch?v=srvUrASNj0s), length: 4:11:03, Sep 18, 2019
 
 
 # Status and problems
@@ -45,5 +47,8 @@ implementation.
 - Drop down menu is not scrolled if exceeds the page height:
 
     ![](<!--path pict-->menu_dropdown_problem.png)
+    
+    Also see SO: [Have a fixed position div that needs to scroll if content overflows](
+        https://stackoverflow.com/questions/16094785/have-a-fixed-position-div-that-needs-to-scroll-if-content-overflows).
 
 
