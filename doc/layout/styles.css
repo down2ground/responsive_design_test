@@ -167,7 +167,8 @@ div.admonition>p.admonition-title {
     border-bottom-width: 1px;
     padding: 5px 20px 5px 10px;
     font-weight: bold;
-    max-width: unset;
+    /* max-width: unset; */
+    /* width: 100%; */
 }
 
 div.admonition>* {

@@ -1,0 +1,145 @@
+<!--VARIABLES {"SORT_ORDER": "010", "code": "multipage"}-->
+
+[Multipage layout (overflown)](multipage_overflown.html) |
+[Single page layout (overflown)](singlepage_overflown.html)
+
+[TOC]
+
+----------------------------------------------------------------------------------------------------
+# Fenced blocks
+
+````
+Short unwrapped preformatted text. This line must NOT be wrapped.
+````
+
+````code
+Long unwrapped preformatted text. This line must NOT be wrapped when the text is too long or the window is too narrow.
+````
+
+----------------------------------------------------------------------------------------------------
+# Tables
+
+The following table not must exceed the page width. **But if the page is too narrow, the table
+will still exceed the page limit.**
+
+Header title | Quite long header title | One more header title    | Yet another header title
+-------------|-------------------------|--------------------------|-------------------------
+Outset row 1 | Cell content            | Cell content             | Cell content
+Outset row 2 | Longer cell content     | Even longer cell content | Cell content
+
+The following table is wide enough and must be restricted in width.
+
+Header title | Quite long header title | One more header title    | Yet another header title | This header title must exceed the limit
+-------------|-------------------------|--------------------------|--------------------------|-------------------------
+Outset row 1 | Cell content            | Cell content             | Cell content             | This cell content must exceed the limit
+Outset row 2 | Longer cell content     | Even longer cell content | Cell content             | This cell content must exceed the limit
+
+----------------------------------------------------------------------------------------------------
+# Complex inclusions
+
+## Inclusions in lists
+
+- Unwrapped code block:
+    ````code
+    System.out.println("Unwrapped code block. Must NOT be wrapped. Must NOT be wrapped.");
+    ````
+- Inclusions into nested list items:
+    1. Table:
+
+        Header title | Quite long header title | One more header title    | Yet another header title
+        -------------|-------------------------|--------------------------|-------------------------
+        Outset row 1 | Cell content            | Cell content             | Cell content
+        Outset row 2 | Longer cell content     | Even longer cell content | Cell content
+
+    1. Admonition:
+
+        !!! tip
+            Admonition with a short content.
+
+
+## Inclusions in block quote
+
+**Block quote with fenced blocks inside:**
+
+> ````shell
+> $ echo "Unwrapped fenced blocks. Must NOT be wrapped. Must NOT be wrapped."
+> ```` 
+
+**Block quote with a list inside.** The list in its turn contains other formatting elements.
+
+> Following is a list:
+> 
+> - Unwrapped code block:
+>     ````code
+>     System.out.println("Unwrapped code block. Must NOT be wrapped. Must NOT be wrapped.");
+>     ````
+> 
+>     1. Table:
+> 
+>         Header title | Quite long header title | One more header title    | Yet another header title | This header title must exceed the limit
+>         -------------|-------------------------|--------------------------|--------------------------|-------------------------
+>         Outset row 1 | Cell content            | Cell content             | Cell content             | This cell content must exceed the limit
+>         Outset row 2 | Longer cell content     | Even longer cell content | Cell content             | This cell content must exceed the limit
+
+
+**Admonition with fenced blocks inside:**
+
+!!! note
+    ````shell
+    $ echo "Unwrapped fenced blocks. Must NOT be wrapped. Must NOT be wrapped."
+    ```` 
+
+**Admonition with a list inside.** The list in its turn contains other formatting elements.
+
+!!! note
+    Following is a list:
+    
+    - Unwrapped code block:
+        ````code
+        System.out.println("Unwrapped code block. Must NOT be wrapped. Must NOT be wrapped.");
+        ````
+        
+    - Inclusions into nested list items:
+        1. Code block:
+        
+            ````wrapped-code
+            System.out.println("Wrapped code block. MUST be wrapped.");
+            ````
+            
+        1. Table:
+    
+            Header title | Quite long header title | One more header title    | Yet another header title
+            -------------|-------------------------|--------------------------|-------------------------
+            Outset row 1 | Cell content            | Cell content             | Cell content
+            Outset row 2 | Longer cell content     | Even longer cell content | Cell content
+    
+
+## High-leveled inclusions
+
+- Inclusions into a list item:
+    1. Admonition:
+
+        !!! tip
+            Included list:
+            
+            - Item containing other elements:
+                
+                > Block quote containing some other elements:
+                > 
+                > - Item containing other elements:
+                > 
+                >     !!! note
+                >         Admonition.
+                >         
+                >         - Item containing other elements:
+                >     
+                >             ````
+                >             Preformatted text.
+                >             ````
+
+
+
+
+
+
+

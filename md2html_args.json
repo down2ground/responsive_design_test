@@ -13,11 +13,20 @@
         { "input-root": "", "output-root": "", "input": "readme.txt", "title": "Home",
             "page-flows": ["sections", "nav"] },
             
-        { "input": "sections/content.txt", "output": "multipage.html", "title": "Multipage",
-            "page-flows": ["sections", "nav"] },
+        { "input": "sections/content.txt", "output": "sections/multipage.html",
+            "title": "Multipage", "page-flows": ["sections", "nav"] },
+        { "input": "sections/content_overflown.txt", "output": "sections/multipage_overflown.html",
+            "title": "Multipage (overflown)", "page-flows": ["sections", "nav"] },
 
-        { "input": "sections/content.txt", "output": "singlepage.html", "title": "Single page",
-            "page-flows": ["sections", "nav"],
+        { "input": "sections/content.txt", "output": "sections/singlepage.html", "title": "Single page",
+            "page-flows": ["singlepage"],
+            "template": "doc_src/templates/default.html",
+            "link-css": ["doc/layout/styles.css", "doc/themes/light_default_content.css",
+                "doc/layout/flex.css"]
+        },
+        { "input": "sections/content_overflown.txt", "output": "sections/singlepage_overflown.html",
+            "title": "Single page (overflown)",
+            "page-flows": ["singlepage"],
             "template": "doc_src/templates/default.html",
             "link-css": ["doc/layout/styles.css", "doc/themes/light_default_content.css",
                 "doc/layout/flex.css"]
@@ -41,6 +50,7 @@
         },
         "page-flows": {
             "sections": { "groups": ["sidebar"] },
+            "singlepage": { "title": "Single-page", "groups": ["sidebar"] },
             "header": [
                 { "link": "doc/content/index_page.html", "title": "Index" }
             ],
@@ -49,6 +59,9 @@
             ],
             "header_additional_links": { "title": " ", "groups": ["sidebar"], "items": [
                 { "link": "https://github.com/arctrong/responsive_design_test", "title": "GitHub", "external": true }
+            ]},
+            "other_projects": { "title": "Other projects", "groups": ["sidebar"], "items": [
+                { "link": "project/flexible_demo.html", "title": "flexible_demo" }
             ]},
             "useful_links": { "title": "Useful links", "groups": ["sidebar"], "items": [
                 { "link": "https://daringfireball.net/projects/markdown/", "title": "Markdown", "external": true },

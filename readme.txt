@@ -51,4 +51,9 @@ implementation.
     Also see SO: [Have a fixed position div that needs to scroll if content overflows](
         https://stackoverflow.com/questions/16094785/have-a-fixed-position-div-that-needs-to-scroll-if-content-overflows).
 
+- When content is scrolled horizontally, it's hidden behind the sidebar:
+
+    ![](<!--path pict-->hidden_by_sidebar.png)
+
+
 

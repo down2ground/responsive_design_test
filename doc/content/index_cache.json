@@ -1,7 +1,9 @@
 {
   "readme.html": [],
-  "doc/content/multipage.html": [],
-  "doc/content/singlepage.html": [],
+  "doc/content/sections/multipage.html": [],
+  "doc/content/sections/multipage_overflown.html": [],
+  "doc/content/sections/singlepage.html": [],
+  "doc/content/sections/singlepage_overflown.html": [],
   "doc/content/sections/dummy_index_content.html": [
     {
       "entry": "about",

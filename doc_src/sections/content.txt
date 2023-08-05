@@ -1,6 +1,7 @@
 <!--VARIABLES {"SORT_ORDER": "010", "code": "multipage"}-->
 
-[Multipage layout](multipage.html) | [Single page layout](singlepage.html)
+[Multipage layout](multipage.html) |
+[Single page layout](singlepage.html)
 
 [TOC]
 
@@ -28,12 +29,8 @@ narrow.
 ----------------------------------------------------------------------------------------------------
 # Fenced blocks
 
-````
+````wrapped
 Short unwrapped preformatted text. This line must NOT be wrapped.
-````
-
-````code
-Long unwrapped preformatted text. This line must NOT be wrapped when the text is too long or the window is too narrow.
 ````
 
 ````wrapped-shell
@@ -56,7 +53,8 @@ Long wrapped preformatted text. This line MUST be wrapped when the text is too l
 ----------------------------------------------------------------------------------------------------
 # Tables
 
-The following table not must exceed the page width.
+The following table not must exceed the page width. **But if the page is too narrow, the table
+will still exceed the page limit.**
 
 Header title | Quite long header title | One more header title    | Yet another header title
 -------------|-------------------------|--------------------------|-------------------------
@@ -75,10 +73,6 @@ Outset row 2 | Longer cell content     | Even longer cell content | Cell content
 
 ## Inclusions in lists
 
-- Unwrapped code block:
-    ````code
-    System.out.println("Unwrapped code block. Must NOT be wrapped.");
-    ````
 - Wrapped code block:
     ````wrapped-code
     System.out.println("Wrapped code block. MUST be wrapped when the text is too long or the window is too narrow.");
@@ -116,10 +110,6 @@ Outset row 2 | Longer cell content     | Even longer cell content | Cell content
 
 **Block quote with fenced blocks inside:**
 
-> ````shell
-> $ echo "Unwrapped fenced blocks. Must NOT be wrapped."
-> ```` 
-> 
 > ````wrapped-shell
 > $ echo "Wrapped fenced blocks. MUST be wrapped when the text is too long or the window is too narrow."
 > ```` 
@@ -134,10 +124,6 @@ Outset row 2 | Longer cell content     | Even longer cell content | Cell content
 
 > Following is a list:
 > 
-> - Unwrapped code block:
->     ````code
->     System.out.println("Unwrapped code block. Must NOT be wrapped.");
->     ````
 > - Wrapped code block:
 >     ````wrapped-code
 >     System.out.println("Wrapped code block. MUST be wrapped when the text is too long or the window is too narrow.");
@@ -177,10 +163,6 @@ Outset row 2 | Longer cell content     | Even longer cell content | Cell content
 **Admonition with fenced blocks inside:**
 
 !!! note
-    ````shell
-    $ echo "Unwrapped fenced blocks. Must NOT be wrapped."
-    ```` 
-    
     ````wrapped-shell
     $ echo "Wrapped fenced blocks. MUST be wrapped when the text is too long or the window is too narrow."
     ````
@@ -199,10 +181,6 @@ Outset row 2 | Longer cell content     | Even longer cell content | Cell content
 !!! note
     Following is a list:
     
-    - Unwrapped code block:
-        ````code
-        System.out.println("Unwrapped code block. Must NOT be wrapped.");
-        ````
     - Wrapped code block:
     
         ````wrapped-code
@@ -248,13 +226,8 @@ Outset row 2 | Longer cell content     | Even longer cell content | Cell content
                 >         
                 >         - Item containing other elements:
                 >     
+                >             ````wrapped
+                >             Preformatted text. Preformatted text.
                 >             ````
-                >             Preformatted text.
-                >             ````
-
-
-
-
-
 
 
