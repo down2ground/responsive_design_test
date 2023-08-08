@@ -1,0 +1,15 @@
+
+<a name="ref_1"></a>**[1]** W3Schools: [HTML Responsive Web Design](
+https://www.w3schools.com/html/html_responsive.asp)
+
+<a name="ref_2"></a>**[2]** W3Schools: [Responsive Web Design - The Viewport](
+https://www.w3schools.com/css/css_rwd_viewport.asp)
+
+<a name="ref_3"></a>**[3]** MDN: [Viewport concepts](
+https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts)
+
+<a name="ref_4"></a>**[4]** Youtube: [Introduction To Responsive Web Design - HTML & CSS Tutorial](
+https://www.youtube.com/watch?v=srvUrASNj0s), length: 4:11:03, Sep 18, 2019
+
+
+

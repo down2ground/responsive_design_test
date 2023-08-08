@@ -1,3 +1,10 @@
+
+a[name]:target, a[id]:target, 
+h1[id]:target, h2[id]:target, h3[id]:target, 
+h4[id]:target, h5[id]:target, h6[id]:target {
+    background-color: #fff9dc;
+}
+
 /* html { */
     /* width: 900px; */
     /* max-width: 900px; */

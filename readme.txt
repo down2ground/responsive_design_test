@@ -14,11 +14,8 @@ Attempt of creating responsive documentation design.
 
 # Materials
 
-- W3Schools: [HTML Responsive Web Design](https://www.w3schools.com/html/html_responsive.asp)
-- W3Schools: [Responsive Web Design - The Viewport](https://www.w3schools.com/css/css_rwd_viewport.asp)
-- MDN: [Viewport concepts](https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts)
-- Youtube: [Introduction To Responsive Web Design - HTML & CSS Tutorial](
-    https://www.youtube.com/watch?v=srvUrASNj0s), length: 4:11:03, Sep 18, 2019
+[[1](<!--page refs-->#ref_1), [2](<!--page refs-->#ref_2), [3](<!--page refs-->#ref_3), 
+[4](<!--page refs-->#ref_4)]
 
 
 # Status and problems
@@ -54,6 +51,31 @@ implementation.
 - When content is scrolled horizontally, it's hidden behind the sidebar:
 
     ![](<!--path pict-->hidden_by_sidebar.png)
+
+- Existing styles
+
+    ````
+    a[name], a[id] {
+        height: 42px;
+        display: block;
+        margin-top: -42px;
+    }
+    ````
+    
+    don't allow targeted links highlight:
+    
+    ````
+    a[name]:target, a[id]:target, 
+    h1[id]:target, h2[id]:target, h3[id]:target, 
+    h4[id]:target, h5[id]:target, h6[id]:target {
+        background-color: #fff9dc;
+    }
+    ````
+    
+    ![](<!--path pict-->targeted_links_problem.png)
+
+
+
 
 
 
