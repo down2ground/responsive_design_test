@@ -57,7 +57,7 @@
             ],
             "links_from_header": { "groups": ["sidebar"], "items": [
                 { "link": "https://github.com/arctrong/responsive_design_test", "title": "GitHub",
-                    "external": true, "class": "narrow_only github" }
+                    "external": true, "class": "narrow_only align_right" }
             ]},
             "sections": { "groups": ["sidebar"] },
             
