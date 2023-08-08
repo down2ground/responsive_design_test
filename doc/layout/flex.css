@@ -8,6 +8,15 @@
     img#burger {
         display: inline;
     }
+    .logo {
+        display: none;
+    }
+    .header .wide_only {
+        display: none;
+    }
+    .header .narrow_only {
+        display: inline;
+    }
     div.index-content {
         column-count: 1;
     }
@@ -21,8 +30,11 @@
     .sidebar {
         bottom: unset;
     }
-    .hideInCompactMode {
+    .sidebar .wide_only {
         display: none;
+    }
+    .sidebar .narrow_only {
+        display: block;
     }
 }
 

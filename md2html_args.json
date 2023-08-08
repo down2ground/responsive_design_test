@@ -12,7 +12,9 @@
     "documents": [
         { "input-root": "", "output-root": "", "input": "readme.txt", "title": "Home",
             "page-flows": ["sections", "nav"] },
-            
+        { "input": "sections/references.txt", "output": "sections/references.html",
+            "title": "References", "code": "refs", "page-flows": ["sections", "nav"] },
+
         { "input": "sections/content.txt", "output": "sections/multipage.html",
             "title": "Multipage", "page-flows": ["sections", "nav"] },
         { "input": "sections/content_overflown.txt", "output": "sections/multipage_overflown.html",
@@ -34,11 +36,6 @@
         
         { "input": "sections/dummy_index_content.txt", "title": "Dummy index content",
             "page-flows": ["sections", "nav"] }
-            
-#        { "input-glob": "sections/*.txt", "page-flows": ["sections", "nav"], 
-#            "title-from-variable": "title", "code-from-variable": "code", 
-#            "sort-by-variable": "SORT_ORDER" }
-
     ],
     "plugins": {
         "relative-paths": {
@@ -49,27 +46,34 @@
             }
         },
         "page-flows": {
-            "sections": { "groups": ["sidebar"] },
-            "singlepage": { "title": "Single-page", "groups": ["sidebar"] },
             "header": [
-                { "link": "doc/content/index_page.html", "title": "Index" }
+                { "link": "readme.html", "title": "", "image": "favicon.png", "image_class": "logo_image" },
+                { "link": "readme.html", "title": "Home", "class": "wide_only" },
+                { "link": "doc/content/index_page.html", "title": "Index", "class": "wide_only" },
+                { "link": "doc/content/index_page.html", "title": "", "class": "narrow_only",
+                    "image": "layout/pict/search.png", "image_class": "header_image index_image" },
+                { "link": "https://github.com/arctrong/responsive_design_test", "title": "GitHub",
+                    "external": true, "class": "wide_only" }
             ],
-             "header_page_links": [
-                { "link": "readme.html", "title": "Home" }
-            ],
-            "header_additional_links": { "title": " ", "groups": ["sidebar"], "items": [
-                { "link": "https://github.com/arctrong/responsive_design_test", "title": "GitHub", "external": true }
+            "links_from_header": { "groups": ["sidebar"], "items": [
+                { "link": "https://github.com/arctrong/responsive_design_test", "title": "GitHub",
+                    "external": true, "class": "narrow_only github" }
             ]},
+            "sections": { "groups": ["sidebar"] },
+            
+            "singlepage": { "title": "Single-page", "groups": ["sidebar"] },
             "other_projects": { "title": "Other projects", "groups": ["sidebar"], "items": [
                 { "link": "project/flexible_demo.html", "title": "flexible_demo" }
             ]},
+            
             "useful_links": { "title": "Useful links", "groups": ["sidebar"], "items": [
                 { "link": "https://daringfireball.net/projects/markdown/", "title": "Markdown", "external": true },
                 { "link": "https://github.com/arctrong/md2html", "title": "md2html", "external": true }
             ]}
         },
         "variables": {
-            "logo": "<b><span style=\"color:#59f;margin-right:7px;\">Responsive</span></b>",
+#            "logo": "<b><span style=\"color:#59f;margin-right:7px;\">Responsive</span></b>",
+            "show_source_link": true,
             "theme": "light_default"
         },
         "index": {"index": {"output": "index_page.html", "title": "Index", "index-cache": "index_cache.json", 
