@@ -1,0 +1,91 @@
+<!--VARIABLES {"code": "content_dark", "theme": "dark_default"}-->
+
+[TOC]
+
+----------------------------------------------------------------------------------------------------
+# About this page
+
+This page is configured to use the dark theme.
+
+----------------------------------------------------------------------------------------------------
+# Typical paragraph
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+in culpa qui officia deserunt mollit anim id est laborum.
+
+----------------------------------------------------------------------------------------------------
+# Lists
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+labore et dolore magna aliqua.
+
+1. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat.
+    - Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+        nulla pariatur.
+    - Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.
+
+----------------------------------------------------------------------------------------------------
+# Fenced blocks
+
+````wrapped
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+labore et dolore magna aliqua.
+````
+
+````wrapped-shell
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+labore et dolore magna aliqua.
+````
+
+````wrapped-code
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+labore et dolore magna aliqua.
+````
+
+----------------------------------------------------------------------------------------------------
+# Block quotes
+
+> BLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+> labore et dolore magna aliqua.
+
+----------------------------------------------------------------------------------------------------
+# Admonitions
+
+!!! note
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua.
+
+!!! tip
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua.
+
+!!! danger
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua.
+
+!!! attention
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua.
+    
+----------------------------------------------------------------------------------------------------
+# Tables
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+labore et dolore magna aliqua.
+
+Header title | Quite long header title | One more header title    | Yet another header title
+-------------|-------------------------|--------------------------|-------------------------
+Outset row 1 | Cell content            | Cell content             | Cell content
+Outset row 2 | Longer cell content     | Even longer cell content | Cell content
+
+
+
+
+
+
+

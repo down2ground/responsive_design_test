@@ -73,8 +73,13 @@ implementation.
     ````
     
     ![](<!--path pict-->targeted_links_problem.png)
+    
+    Also see SO: [CSS- Highlight a div when the id is linked to using an anchor?](
+    https://stackoverflow.com/questions/11142125/css-highlight-a-div-when-the-id-is-linked-to-using-an-anchor).
 
+- Would be good to place the sidebar links like "Source text" and "GitHub" in one line:
 
+    ![](<!--path pict-->place_in_one_line.png)
 
 
 

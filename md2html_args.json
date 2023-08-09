@@ -20,6 +20,9 @@
         { "input": "sections/content_overflown.txt", "output": "sections/multipage_overflown.html",
             "title": "Multipage (overflown)", "page-flows": ["sections", "nav"] },
 
+        { "input": "sections/content_dark.txt", "output": "sections/content_dark.html",
+            "title": "Dark theme", "page-flows": ["sections", "nav"] },
+
         { "input": "sections/content.txt", "output": "sections/singlepage.html", "title": "Single page",
             "page-flows": ["singlepage"],
             "template": "doc_src/templates/default.html",
