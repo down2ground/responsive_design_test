@@ -29,6 +29,8 @@
     }
     .sidebar {
         bottom: unset;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
     }
     .sidebar .wide_only {
         display: none;
