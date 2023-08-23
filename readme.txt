@@ -32,8 +32,7 @@ implementation.
     in files `doc_src/templates/multipage.html` and `doc/layout/styles.css`.
 
 - The best practices in activating and deactivating of the sidebar. Now it's done using
-    JavaScript but probably pure CSS would be better. Also see
-    [here](https://codepen.io/markcaron/pen/wdVmpB).
+    JavaScript but probably pure CSS would be better. Also see [[6](<!--page refs-->#ref_6)].
 
 - If possible improve look and feel on mobile devices.
 
@@ -45,8 +44,7 @@ implementation.
 
     ![](<!--path pict-->menu_dropdown_problem.png)
     
-    Also see SO: [Have a fixed position div that needs to scroll if content overflows](
-        https://stackoverflow.com/questions/16094785/have-a-fixed-position-div-that-needs-to-scroll-if-content-overflows).
+    Also see [[5](<!--page refs-->#ref_5)].
 
 - When content is scrolled horizontally, it's hidden behind the sidebar:
 

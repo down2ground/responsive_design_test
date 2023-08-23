@@ -1,0 +1,50 @@
+<!--VARIABLES {"code": "feature"}-->
+
+[TOC]
+
+----------------------------------------------------------------------------------------------------
+# About this page
+
+This page demonstrates different Markdown features.
+
+----------------------------------------------------------------------------------------------------
+# Footnotes
+
+Python-Markdown 3.4.4 documentation: [Footnotes](https://python-markdown.github.io/extensions/footnotes/).
+
+Footnote links are added by the following expression `[^1]` as in the example[^1].
+
+The footnotes themselves are added by the expressions like `[^1]: The content of the footnote 1.`.
+They are added to the place marked by <code>&sol;//Footnotes Go Here///</code> text or in the page end.
+
+[^1]: The content of the footnote 1.
+
+///Footnotes Go Here///
+
+The second marker does not work. Here's the second link[^2]. And the footnote content will be
+above, not below.
+
+[^2]: The content of the footnote 2.
+
+///Footnotes Go Here///
+
+For now it works only in the Python implementation.
+    
+----------------------------------------------------------------------------------------------------
+# Attribute Lists
+
+Python-Markdown 3.4.4 documentation: [Attribute Lists](https://python-markdown.github.io/extensions/attr_list/).
+
+The element attributes may be added by the expressions like `{: .grey}`.
+
+Header title | Quite long header title | One more header title    | Yet another header title
+-------------|-------------------------|--------------------------|-------------------------
+Outset row 1 | Cell content {: .grey}  | Cell content             | Cell content
+Outset row 2 | Longer cell content     | Even longer cell content | Cell content
+
+For now it works only in the Python implementation.
+
+
+
+
+

@@ -11,5 +11,12 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts)
 <a name="ref_4"></a>**[4]** Youtube: [Introduction To Responsive Web Design - HTML & CSS Tutorial](
 https://www.youtube.com/watch?v=srvUrASNj0s), length: 4:11:03, Sep 18, 2019
 
+<a name="ref_5"></a>**[5]** Stack Overflow:
+[Have a fixed position div that needs to scroll if content overflows](
+https://stackoverflow.com/questions/16094785/have-a-fixed-position-div-that-needs-to-scroll-if-content-overflows)
+
+<a name="ref_6"></a>**[6]** CodePen:
+[Pure CSS Dropdown without JavaScript](https://codepen.io/markcaron/pen/wdVmpB)
+
 
 
