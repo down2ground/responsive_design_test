@@ -6,12 +6,12 @@
 
 <p style="clear: both;"></p>
 
-
+----------------------------------------------------------------------------------------------------
 # What's that
 
 Attempt of creating responsive documentation design.
 
-
+----------------------------------------------------------------------------------------------------
 # Materials
 
 [[1](<!--page refs-->#ref_1), [2](<!--page refs-->#ref_2), [3](<!--page refs-->#ref_3), 
@@ -39,12 +39,6 @@ implementation.
 - Look at the admonition problem:
 
     ![](<!--path pict-->admonition_problem.png)
-    
-- Drop down menu is not scrolled if exceeds the page height:
-
-    ![](<!--path pict-->menu_dropdown_problem.png)
-    
-    Also see [[5](<!--page refs-->#ref_5)].
 
 - When content is scrolled horizontally, it's hidden behind the sidebar:
 
@@ -75,10 +69,18 @@ implementation.
     Also see SO: [CSS- Highlight a div when the id is linked to using an anchor?](
     https://stackoverflow.com/questions/11142125/css-highlight-a-div-when-the-id-is-linked-to-using-an-anchor).
 
+
+----------------------------------------------------------------------------------------------------
+# Resolved
+    
+- Drop down menu is not scrolled if exceeds the page height:
+
+    ![](<!--path pict-->menu_dropdown_problem.png)
+    
+    Also see [[5](<!--page refs-->#ref_5)].
+
 - Would be good to place the sidebar links like "Source text" and "GitHub" in one line:
 
     ![](<!--path pict-->place_in_one_line.png)
-
-
 
 

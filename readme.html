@@ -45,11 +45,13 @@ href="https://github.com/arctrong/responsive_design_test"><span class="">GitHub<
 <div class="sidebar">
     <table class="sidebarAligner">
         <tr><td valign="top">
-            <a href="readme.txt" class="sidebar_item header_item_source narrow_only align_right" 
+            <div class="align_right">
+            <a class="sidebar_item_inline narrow_only align_right" href="https://github.com/arctrong/responsive_design_test">GitHub</a>
+            
+            <a href="readme.txt" class="sidebar_item_inline header_item_source narrow_only align_right" 
                 title="Source text">&lt;/&gt;</a>
             
-            
-            <a class="sidebar_item narrow_only align_right" href="https://github.com/arctrong/responsive_design_test">GitHub</a>
+            </div>
             
             <a class="sidebar_item selected " href="readme.html">Home</a>
             <a class="sidebar_item " href="doc/content/sections/references.html">References</a>
@@ -82,12 +84,15 @@ href="https://github.com/arctrong/responsive_design_test"><span class="">GitHub<
 <li><a href="#whats-that">What's that</a></li>
 <li><a href="#materials">Materials</a></li>
 <li><a href="#status-and-problems">Status and problems</a></li>
+<li><a href="#resolved">Resolved</a></li>
 </ul>
 </div>
 <p style="clear: both;"></p>
 
+<hr />
 <h1 id="whats-that">What's that</h1>
 <p>Attempt of creating responsive documentation design.</p>
+<hr />
 <h1 id="materials">Materials</h1>
 <p>[<a href="doc/content/sections/references.html#ref_1">1</a>, <a href="doc/content/sections/references.html#ref_2">2</a>, <a href="doc/content/sections/references.html#ref_3">3</a>, 
 <a href="doc/content/sections/references.html#ref_4">4</a>]</p>
@@ -112,11 +117,6 @@ implementation.</p>
 <p><img alt="" src="doc/pict/admonition_problem.png" /></p>
 </li>
 <li>
-<p>Drop down menu is not scrolled if exceeds the page height:</p>
-<p><img alt="" src="doc/pict/menu_dropdown_problem.png" /></p>
-<p>Also see [<a href="doc/content/sections/references.html#ref_5">5</a>].</p>
-</li>
-<li>
 <p>When content is scrolled horizontally, it's hidden behind the sidebar:</p>
 <p><img alt="" src="doc/pict/hidden_by_sidebar.png" /></p>
 </li>
@@ -135,6 +135,15 @@ h4[id]:target, h5[id]:target, h6[id]:target {
 }</code></pre>
 <p><img alt="" src="doc/pict/targeted_links_problem.png" /></p>
 <p>Also see SO: <a href="https://stackoverflow.com/questions/11142125/css-highlight-a-div-when-the-id-is-linked-to-using-an-anchor">CSS- Highlight a div when the id is linked to using an anchor?</a>.</p>
+</li>
+</ul>
+<hr />
+<h1 id="resolved">Resolved</h1>
+<ul>
+<li>
+<p>Drop down menu is not scrolled if exceeds the page height:</p>
+<p><img alt="" src="doc/pict/menu_dropdown_problem.png" /></p>
+<p>Also see [<a href="doc/content/sections/references.html#ref_5">5</a>].</p>
 </li>
 <li>
 <p>Would be good to place the sidebar links like "Source text" and "GitHub" in one line:</p>
