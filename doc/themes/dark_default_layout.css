@@ -47,16 +47,15 @@
     color: white;
 }
 
-.sidebar_item { 
+.sidebar_item, .sidebar_item_inline { 
     color: white;
 }
 
-
-.sidebar_item:hover {
+.sidebar_item:hover, .sidebar_item_inline:hover {
     background-color: #5f7c9b;
 }
 
-.sidebar_item.selected {
+.sidebar_item.selected, .sidebar_item_inline.selected {
     text-decoration-color: #06e8ff;
 }
 

@@ -34,7 +34,7 @@
         display: none;
     }
     .sidebar .narrow_only {
-        display: block;
+        display: inline;
     }
 }
 

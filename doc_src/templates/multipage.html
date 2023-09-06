@@ -21,7 +21,10 @@ onclick="toggleSidebar();return false;" />
 {{#header}}<a 
 class="header_item{{#current}} selected{{/current}} {{{class}}}"
 href="{{link}}">{{#title}}<span class="{{{title_class}}}">{{{.}}}</span>{{/title}}{{#image}}<img 
-class="{{{image_class}}}" src="{{resource_path}}{{{.}}}" />{{/image}}</a>{{/header}}
+class="{{{image_class}}}" src="{{resource_path}}{{{.}}}" />{{/image}}</a>{{/header}}{{#header_wide_only}}<a 
+class="header_item{{#current}} selected{{/current}} wide_only"
+href="{{link}}">{{#title}}<span class="{{{title_class}}}">{{{.}}}</span>{{/title}}{{#image}}<img 
+class="{{{image_class}}}" src="{{resource_path}}{{{.}}}" />{{/image}}</a>{{/header_wide_only}}
 {{#show_source_link}}
 {{#source_file}}<a href="{{{.}}}" class="header_item_source wide_only" title="Source text">&lt;/&gt;</a>{{/source_file}}
 {{^source_file}}<span class="header_item_source inactive wide_only">&lt;/&gt;</span>{{/source_file}}
@@ -38,12 +41,14 @@ class="{{{image_class}}}" src="{{resource_path}}{{{.}}}" />{{/image}}</a>{{/head
 <div class="sidebar">
     <table class="sidebarAligner">
         <tr><td valign="top">
-            {{#show_source_link}}
-            {{#source_file}}<a href="{{{.}}}" class="sidebar_item header_item_source narrow_only align_right" 
+            <div class="align_right">{{#header_wide_only}}
+            <a class="sidebar_item_inline{{#current}} selected{{/current}} narrow_only align_right" href="{{link}}">{{title}}</a>
+            {{/header_wide_only}}{{#show_source_link}}
+            {{#source_file}}<a href="{{{.}}}" class="sidebar_item_inline header_item_source narrow_only align_right" 
                 title="Source text">&lt;/&gt;</a>{{/source_file}}
-            {{^source_file}}<span class="sidebar_item header_item_source inactive narrow_only align_right"
+            {{^source_file}}<span class="sidebar_item_inline header_item_source inactive narrow_only align_right"
                 >&lt;/&gt;</span>{{/source_file}}
-            {{/show_source_link}}
+            {{/show_source_link}}</div>
             {{#sidebar}}
             {{#not_empty}}{{#title}}<h3>{{.}}</h3>{{/title}}{{/not_empty}}
             {{#.}}

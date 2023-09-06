@@ -44,16 +44,15 @@ body {
     color: firebrick;
 }
 
-.sidebar_item { 
+.sidebar_item, .sidebar_item_inline { 
     color: firebrick;
 }
 
-
-.sidebar_item:hover { 
+.sidebar_item:hover, .sidebar_item_inline:hover { 
     background-color: #8fd8e1;
 }
 
-.sidebar_item.selected {
+.sidebar_item.selected, .sidebar_item_inline.selected {
     text-decoration-color: dodgerblue;
 }
 
