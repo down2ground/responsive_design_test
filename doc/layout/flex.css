@@ -1,23 +1,22 @@
 @media screen and (max-width: 850px) {
     .sidebar {
         display: none;
-        /* bottom: unset; */
         border-bottom-style: solid;
         border-bottom-width: 1px;
     }
     body {
         margin-left: 0px;
     }
-    img#burger {
-        display: inline;
-    }
-    .logo {
+    .toggle_wide_only_block {
         display: none;
     }
-    .header .wide_only {
+    .toggle_wide_only_inline {
         display: none;
     }
-    .header .narrow_only {
+    .toggle_narrow_only_block {
+        display: block;
+    }
+    .toggle_narrow_only_inline {
         display: inline;
     }
     div.index-content {
@@ -29,12 +28,6 @@
     }
     table.sidebarAligner {
         height: unset;
-    }
-    .sidebar .wide_only {
-        display: none;
-    }
-    .sidebar .narrow_only {
-        display: inline;
     }
 }
 

@@ -25,11 +25,19 @@ body {
     margin-top: -2px;
 }
 
-.header .wide_only {
+.toggle_wide_only_block {
+    display: block;
+}
+
+.toggle_wide_only_inline {
     display: inline;
 }
 
-.header .narrow_only {
+.toggle_narrow_only_block {
+    display: none;
+}
+
+.toggle_narrow_only_inline {
     display: none;
 }
 
@@ -40,7 +48,6 @@ body {
 
 #burger {
     cursor: pointer;
-    display: none;
     position: relative;
     top: 3px;
     margin-right: 10px;
@@ -97,14 +104,6 @@ body {
     overflow-y: auto;
     border-right-style: solid;
     border-right-width: 1px;
-}
-
-.sidebar .wide_only {
-    display: block;
-}
-
-.sidebar .narrow_only {
-    display: none;
 }
 
 .align_right {
