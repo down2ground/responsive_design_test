@@ -14,8 +14,13 @@ Attempt of creating responsive documentation design.
 ----------------------------------------------------------------------------------------------------
 # Materials
 
-[[1](<!--page refs-->#ref_1), [2](<!--page refs-->#ref_2), [3](<!--page refs-->#ref_3), 
-[4](<!--page refs-->#ref_4)]
+[[1](<!--page refs-->#ref_1)],
+[[2](<!--page refs-->#ref_2)],
+[[3](<!--page refs-->#ref_3)], 
+[[4](<!--page refs-->#ref_4)],
+[[7](<!--page refs-->#ref_7)],
+[[8](<!--page refs-->#ref_8)],
+[[9](<!--page refs-->#ref_9)]
 
 
 # Status and problems

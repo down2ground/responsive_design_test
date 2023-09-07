@@ -18,5 +18,16 @@ https://stackoverflow.com/questions/16094785/have-a-fixed-position-div-that-need
 <a name="ref_6"></a>**[6]** CodePen:
 [Pure CSS Dropdown without JavaScript](https://codepen.io/markcaron/pen/wdVmpB)
 
+<a name="ref_7"></a>**[7]** W3Schools:
+[CSS Animations](https://www.w3schools.com/css/css3_animations.asp)
+
+<a name="ref_8"></a>**[8]** Stack Overflow:
+[How do you make an image blink?](
+https://stackoverflow.com/questions/12115247/how-do-you-make-an-image-blink)
+
+<a name="ref_9"></a>**[9]** Go Make Things:
+[How to prevent anchor links from scrolling behind a sticky header with one line of CSS](
+https://gomakethings.com/how-to-prevent-anchor-links-from-scrolling-behind-a-sticky-header-with-one-line-of-css/)
+
 
 
