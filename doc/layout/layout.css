@@ -2,7 +2,7 @@ body {
     margin-left: 250px;
     margin-right: 0px;
     margin-top: 34px;
-    margin-bottom: 0px;
+    margin-bottom: 100px;
     padding:20px;
 }
 
@@ -19,6 +19,10 @@ body {
     overflow: hidden;
     white-space: nowrap;
     font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6, a[name], a[id] {
+    scroll-margin-top: 42px;
 }
 
 .header * {
@@ -133,19 +137,6 @@ table.sidebarAligner td {
     color: inherit;
 }
 
-a[name], a[id] {
-    height: 42px;
-    display: block;
-    margin-top: -42px;
-}
-
-h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
-    content: '';
-    display: block;
-    height:      42px;
-    margin-top: -42px;
-}
-
 div.sidebar h1::before, div.sidebar h2::before, div.sidebar h3::before, 
 div.sidebar h4::before, div.sidebar h5::before, div.sidebar h6::before {
     content: unset;
@@ -181,7 +172,23 @@ div.sidebar h3 {
     margin-bottom: 0;
 }
 
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
 
+a[name]:target::before, a[id]:target::before, 
+h1[id]:target::before, h2[id]:target::before, h3[id]:target::before, 
+h4[id]:target::before, h5[id]:target::before, h6[id]:target::before,
+a[name]:empty:target::before, a[id]:empty:target::before {
+    position: absolute;
+    z-index: -10;
+    margin-left: -15px;
+    margin-top: -7px;
+    animation: blink 400ms;
+    animation-iteration-count: 5;
+}
 
 
 

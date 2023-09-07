@@ -60,4 +60,9 @@ div.sidebar h3 {
     color: darkslategray;
 }
 
-
+a[name]:target::before, a[id]:target::before, 
+h1[id]:target::before, h2[id]:target::before, h3[id]:target::before, 
+h4[id]:target::before, h5[id]:target::before, h6[id]:target::before,
+a[name]:empty:target::before, a[id]:empty:target::before {
+    content: url(../layout/pict/target_pointer_light.png);
+}
