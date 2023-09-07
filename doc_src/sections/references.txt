@@ -1,5 +1,5 @@
 
-<a name="ref_1"></a>**[1]** W3Schools: [HTML Responsive Web Design](
+<a name="ref_1">**[1]**</a> W3Schools: [HTML Responsive Web Design](
 https://www.w3schools.com/html/html_responsive.asp)
 
 <a name="ref_2"></a>**[2]** W3Schools: [Responsive Web Design - The Viewport](

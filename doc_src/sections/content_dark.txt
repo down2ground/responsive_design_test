@@ -83,7 +83,13 @@ Header title | Quite long header title | One more header title    | Yet another 
 Outset row 1 | Cell content            | Cell content             | Cell content
 Outset row 2 | Longer cell content     | Even longer cell content | Cell content
 
+----------------------------------------------------------------------------------------------------
+<a name="additional_anchor"></a>
+# Anchors
 
+This paragraph header is prepended with an anchor.
+
+Go to [this anchor](#additional_anchor).
 
 
 

@@ -29,6 +29,14 @@ above, not below.
 ///Footnotes Go Here///
 
 For now it works only in the Python implementation.
+
+----------------------------------------------------------------------------------------------------
+<a name="additional_anchor"></a>
+# Anchors
+
+This paragraph header is prepended with an anchor.
+
+Go to [this anchor](#additional_anchor).
     
 ----------------------------------------------------------------------------------------------------
 # Attribute Lists {#attribute_lists_custom_name}
