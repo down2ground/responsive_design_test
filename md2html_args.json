@@ -28,15 +28,22 @@
 
         { "input": "sections/content.txt", "output": "sections/singlepage.html", "title": "Single page",
             "page-flows": ["singlepage"],
-            "template": "doc_src/templates/default.html",
-            "link-css": ["doc/layout/styles.css", "doc/themes/light_default_content.css",
+            "template": "doc_src/templates/singlepage.html",
+            "link-css": ["doc/layout/content.css", "doc/themes/light/content_theme.css",
+                "doc/layout/flex.css"]
+        },
+        { "input": "sections/content.txt", "output": "sections/singlepage_dark.html",
+            "title": "Single page (dark)",
+            "page-flows": ["singlepage"],
+            "template": "doc_src/templates/singlepage.html",
+            "link-css": ["doc/layout/content.css", "doc/themes/dark/content_theme.css",
                 "doc/layout/flex.css"]
         },
         { "input": "sections/content_overflown.txt", "output": "sections/singlepage_overflown.html",
             "title": "Single page (overflown)",
             "page-flows": ["singlepage"],
-            "template": "doc_src/templates/default.html",
-            "link-css": ["doc/layout/styles.css", "doc/themes/light_default_content.css",
+            "template": "doc_src/templates/singlepage.html",
+            "link-css": ["doc/layout/content.css", "doc/themes/light/content_theme.css",
                 "doc/layout/flex.css"]
         },
         
@@ -44,6 +51,11 @@
             "page-flows": ["sections", "nav"] }
     ],
     "plugins": {
+        "variables": {
+#            "logo": "<b><span style=\"color:#59f;margin-right:7px;\">Responsive</span></b>",
+            "show_source_link": true,
+            "theme": "light"
+        },
         "relative-paths": {
             "markers": ["path"],
             "paths": {
@@ -75,11 +87,6 @@
                 { "link": "https://daringfireball.net/projects/markdown/", "title": "Markdown", "external": true },
                 { "link": "https://github.com/arctrong/md2html", "title": "md2html", "external": true }
             ]}
-        },
-        "variables": {
-#            "logo": "<b><span style=\"color:#59f;margin-right:7px;\">Responsive</span></b>",
-            "show_source_link": true,
-            "theme": "light_default"
         },
         "index": {"index": {"output": "index_page.html", "title": "Index", "index-cache": "index_cache.json", 
                     "index-cache-relative": true, "letters": true, "letters-block": true,

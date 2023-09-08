@@ -2,8 +2,8 @@ body {
     margin-left: 250px;
     margin-right: 0px;
     margin-top: 34px;
-    margin-bottom: 100px;
     padding:20px;
+    margin-bottom: 100px;
 }
 
 .header {
@@ -178,10 +178,7 @@ div.sidebar h3 {
     100% { opacity: 1; }
 }
 
-a[name]:target::before, a[id]:target::before, 
-h1[id]:target::before, h2[id]:target::before, h3[id]:target::before, 
-h4[id]:target::before, h5[id]:target::before, h6[id]:target::before,
-a[name]:empty:target::before, a[id]:empty:target::before {
+*[id]:target::before, *[name]:target::before {
     position: absolute;
     z-index: -10;
     margin-left: -15px;

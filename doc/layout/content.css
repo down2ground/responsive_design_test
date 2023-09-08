@@ -12,6 +12,7 @@ body {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    margin-bottom: 100px;
 }
 
 ul, ol {
@@ -43,11 +44,11 @@ code, .code {
 pre>code, div.code {
     font-size: 0.889rem;
     display: block;
-    min-width: max-content;
     line-height: 1.4;
     border-radius: 0;
     white-space: pre;
     padding: 10px;
+    overflow-x: auto;
 }
 
 pre>code.language-wrapped {
