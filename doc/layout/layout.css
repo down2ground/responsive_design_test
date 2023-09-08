@@ -95,19 +95,30 @@ body {
     margin: 0 7px 0 7px;
 }
 
-.sidebar {
+.sidebarWrapper {
     display: block;
     position: fixed;
+    width: 251px;
     top: 40px;
-    bottom: 0;
-    z-index: 2;
-    margin: 0;
-    padding: 10px 20px 10px 20px;
     left: 0;
-    width: 210px;
+    bottom: 0;
+    z-index: 2;   
     overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.sidebar {
+    /* width: 100%; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px 20px 10px 20px;
     border-right-style: solid;
     border-right-width: 1px;
+    border-bottom-style: none;
+    border-bottom-width: 1px;
 }
 
 .align_right {
@@ -132,13 +143,13 @@ table.sidebarAligner td {
     vertical-align: bottom;
 }
 
-div.sidebar h1::before, div.sidebar h2::before, div.sidebar h3::before, 
-div.sidebar h4::before, div.sidebar h5::before, div.sidebar h6::before {
-    content: unset;
-    display: unset;
-    height: unset;
-    margin-top: unset;
-}
+/* div.sidebar h1::before, div.sidebar h2::before, div.sidebar h3::before,  */
+/* div.sidebar h4::before, div.sidebar h5::before, div.sidebar h6::before { */
+    /* content: unset; */
+    /* display: unset; */
+    /* height: unset; */
+    /* margin-top: unset; */
+/* } */
 
 .sidebar_item {
     display: block;
