@@ -1,4 +1,4 @@
-<!--VARIABLES {"code": "content_dark", "theme": "dark_default"}-->
+<!--VARIABLES {"code": "content_dark", "theme": "dark"}-->
 
 [TOC]
 

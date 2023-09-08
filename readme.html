@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <link rel="shortcut icon" type="image/png" href="doc/favicon.png"/>
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="doc/layout/styles.css"/>
-<link rel="stylesheet" type="text/css" href="doc/themes/light_default_content.css"/>
+<link rel="stylesheet" type="text/css" href="doc/layout/content.css"/>
+<link rel="stylesheet" type="text/css" href="doc/themes/light/content_theme.css"/>
 <link rel="stylesheet" type="text/css" href="doc/layout/layout.css"/>
-<link rel="stylesheet" type="text/css" href="doc/themes/light_default_layout.css"/>
+<link rel="stylesheet" type="text/css" href="doc/themes/light/layout_theme.css"/>
 
 <link rel="stylesheet" type="text/css" href="doc/layout/flex.css"/>
 <link rel="stylesheet" type="text/css" href="doc/custom.css"/>
@@ -62,6 +62,7 @@ href="https://github.com/arctrong/responsive_design_test"><span class="">GitHub<
             <a class="sidebar_item " href="doc/content/sections/dummy_index_content.html">Dummy index content</a>
             <h3>Single-page</h3>
             <a class="sidebar_item " href="doc/content/sections/singlepage.html">Single page</a>
+            <a class="sidebar_item " href="doc/content/sections/singlepage_dark.html">Single page (dark)</a>
             <a class="sidebar_item " href="doc/content/sections/singlepage_overflown.html">Single page (overflown)</a>
             <h3>Other projects</h3>
             <a class="sidebar_item " href="project/flexible_demo.html">flexible_demo</a>
@@ -84,6 +85,7 @@ href="https://github.com/arctrong/responsive_design_test"><span class="">GitHub<
 <li><a href="#whats-that">What's that</a></li>
 <li><a href="#materials">Materials</a></li>
 <li><a href="#status-and-problems">Status and problems</a></li>
+<li><a href="#problems">Problems</a></li>
 <li><a href="#resolved">Resolved</a></li>
 </ul>
 </div>
@@ -101,21 +103,18 @@ href="https://github.com/arctrong/responsive_design_test"><span class="">GitHub<
 [<a href="doc/content/sections/references.html#ref_7">7</a>],
 [<a href="doc/content/sections/references.html#ref_8">8</a>],
 [<a href="doc/content/sections/references.html#ref_9">9</a>]</p>
+<hr />
 <h1 id="status-and-problems">Status and problems</h1>
 <p>The solution works much better that it did. But it needs more study of HTML flexible design 
 implementation.</p>
+<p>The responsive behavior is implementing by adding:</p>
+<pre class="highlight"><code class="language-wrapped">&lt;meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"&gt;</code></pre>
+<hr />
+<h1 id="problems">Problems</h1>
 <ul>
 <li>
-<p>The following setting:</p>
-<pre class="highlight"><code class="language-wrapped">&lt;meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"&gt;</code></pre>
-<p>in files <code>doc_src/templates/multipage.html</code> and <code>doc/layout/styles.css</code>.</p>
-</li>
-<li>
-<p>The best practices in activating and deactivating of the sidebar. Now it's done using
+<p>Consider he best practices in activating and deactivating of the sidebar. Now it's done using
     JavaScript but probably pure CSS would be better. Also see [<a href="doc/content/sections/references.html#ref_6">6</a>].</p>
-</li>
-<li>
-<p>If possible improve look and feel on mobile devices.</p>
 </li>
 <li>
 <p>Look at the admonition problem:</p>
@@ -124,6 +123,28 @@ implementation.</p>
 <li>
 <p>When content is scrolled horizontally, it's hidden behind the sidebar:</p>
 <p><img alt="" src="doc/pict/hidden_by_sidebar.png" /></p>
+</li>
+<li>
+<p>Implement tables horizontal scrolling. It may be easily done by adding the following CSS
+    properties:</p>
+<pre class="highlight"><code>table {
+    display: block;
+    overflow-x: auto;
+}</code></pre>
+<p>Also need to restore the setting for some other tables, like this:</p>
+<pre class="highlight"><code>table.sidebarAligner {
+    display: table;
+}</code></pre>
+<p>This works and there are no problems spotted by now, but there are opinions against this,
+see: [<a href="doc/content/sections/references.html#ref_10">10</a>], [<a href="doc/content/sections/references.html#ref_11">11</a>],
+[<a href="doc/content/sections/references.html#ref_12">12</a>], [<a href="doc/content/sections/references.html#ref_13">13</a>]. In sort:</p>
+<blockquote>
+<p>Setting <code>display: block</code> on a table body will strip the table of semantics and thus is not
+a good solution due to accessibility issues.</p>
+</blockquote>
+<p>The best way is wrapping every table into a <code>&lt;div&gt;</code> and applying the <code>display</code> and the 
+<code>overflow-x</code> property to this DIV, but this needs patching the Markdown engines both in the 
+Python and the Java versions.</p>
 </li>
 </ul>
 <hr />

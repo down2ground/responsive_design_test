@@ -22,24 +22,23 @@ Attempt of creating responsive documentation design.
 [[8](<!--page refs-->#ref_8)],
 [[9](<!--page refs-->#ref_9)]
 
-
+----------------------------------------------------------------------------------------------------
 # Status and problems
 
 The solution works much better that it did. But it needs more study of HTML flexible design 
 implementation.
 
-- The following setting:
+The responsive behavior is implementing by adding:
 
-    ````wrapped
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
-    ````
+````wrapped
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+````
     
-    in files `doc_src/templates/multipage.html` and `doc/layout/styles.css`.
+----------------------------------------------------------------------------------------------------
+# Problems
 
-- The best practices in activating and deactivating of the sidebar. Now it's done using
+- Consider he best practices in activating and deactivating of the sidebar. Now it's done using
     JavaScript but probably pure CSS would be better. Also see [[6](<!--page refs-->#ref_6)].
-
-- If possible improve look and feel on mobile devices.
 
 - Look at the admonition problem:
 
@@ -48,6 +47,35 @@ implementation.
 - When content is scrolled horizontally, it's hidden behind the sidebar:
 
     ![](<!--path pict-->hidden_by_sidebar.png)
+    
+- Implement tables horizontal scrolling. It may be easily done by adding the following CSS
+    properties:
+
+    ````
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    ````
+    
+    Also need to restore the setting for some other tables, like this:
+    
+    ````
+    table.sidebarAligner {
+        display: table;
+    }
+    ````
+    
+    This works and there are no problems spotted by now, but there are opinions against this,
+    see: [[10](<!--page refs-->#ref_10)], [[11](<!--page refs-->#ref_11)],
+    [[12](<!--page refs-->#ref_12)], [[13](<!--page refs-->#ref_13)]. In sort:
+    
+    > Setting `display: block` on a table body will strip the table of semantics and thus is not
+    > a good solution due to accessibility issues.
+    
+    The best way is wrapping every table into a `<div>` and applying the `display` and the 
+    `overflow-x` property to this DIV, but this needs patching the Markdown engines both in the 
+    Python and the Java versions.
 
 ----------------------------------------------------------------------------------------------------
 # Resolved
