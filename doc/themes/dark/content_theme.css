@@ -3,19 +3,6 @@ body {
     background-color: #4a525a;
 }
 
-div.light_only+p>img, img.light_only {
-    background-color: white;
-    padding: 7px;
-}
-
-a {
-  color: #affff4;
-}
-
-a:visited {
-  color: #f2a1c7;
-}
-
 hr {
     background: #87ebee;
 }
@@ -111,4 +98,24 @@ div.admonition.note>p.admonition-title {
     border-bottom-color: #448aff;
     background-color: #33425b;
 }
+
+.poweredBy {
+    color: lightgray;
+}
+
+/* Only for this theme. */
+
+a {
+  color: #affff4;
+}
+
+a:visited {
+  color: #f2a1c7;
+}
+
+div.light_only+p>img, img.light_only {
+    background-color: white;
+    padding: 7px;
+}
+
 

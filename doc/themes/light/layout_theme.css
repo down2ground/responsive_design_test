@@ -1,12 +1,8 @@
-body {
-    color: black;
-    background-color: white;
-}
-
 .header {
     background-color: black;
 }
 
+.header a:link, .header a:visited, .header a:hover, .header a:active,
 .header_item {
     color: darksalmon;
 }
@@ -36,11 +32,15 @@ body {
     background-color: powderblue;
 }
 
-.sidebarAligner td.bottom {
-    color: dimgray;
+.sidebar a:link, .sidebar a:visited, .sidebar a:hover, .sidebar a:active {
+    color: firebrick;
 }
 
-.sidebarAligner td.bottom a:hover {
+.poweredBy a:link, .poweredBy a:visited, .poweredBy a:hover, .poweredBy a:active {
+    color: inherit;
+}
+
+.poweredBy a:hover {
     color: firebrick;
 }
 
