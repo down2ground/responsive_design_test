@@ -1,9 +1,11 @@
 {
   "readme.html": [],
+  "doc/content/sections/references.html": [],
   "doc/content/sections/multipage.html": [],
-  "doc/content/sections/multipage_overflown.html": [],
+  "doc/content/sections/content_dark.html": [],
+  "doc/content/sections/features.html": [],
   "doc/content/sections/singlepage.html": [],
-  "doc/content/sections/singlepage_overflown.html": [],
+  "doc/content/sections/singlepage_dark.html": [],
   "doc/content/sections/dummy_index_content.html": [
     {
       "entry": "about",
@@ -495,9 +497,5 @@
       "link": "sections/dummy_index_content.html#index_entry_index_98",
       "title": "Dummy index content"
     }
-  ],
-  "doc/content/sections/references.html": [],
-  "doc/content/sections/content_dark.html": [],
-  "doc/content/sections/features.html": [],
-  "doc/content/sections/singlepage_dark.html": []
+  ]
 }

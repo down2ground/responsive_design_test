@@ -29,12 +29,16 @@ narrow.
 ----------------------------------------------------------------------------------------------------
 # Fenced blocks
 
-````wrapped
-Short unwrapped preformatted text. This line must NOT be wrapped.
+````
+Short not wrapped preformatted text. This line must NOT be wrapped.
 ````
 
 ````wrapped-shell
-Long wrapped preformatted text. This line MUST be wrapped when the text is too long or the window is too narrow.
+Long wrapped preformatted text. This line MUST be WRAPPED when the text is too long or the window is too narrow.
+````
+
+````code
+Long not wrapped preformatted text. This line MUST be SCROLLED when the text is too long or the window is too narrow.
 ````
 
 ----------------------------------------------------------------------------------------------------
@@ -53,7 +57,7 @@ Long wrapped preformatted text. This line MUST be wrapped when the text is too l
 ----------------------------------------------------------------------------------------------------
 # Tables
 
-The following table not must exceed the page width. **But if the page is too narrow, the table
+The following table must not exceed the page width. **But if the page is too narrow, the table
 will still exceed the page limit.**
 
 Header title | Quite long header title | One more header title    | Yet another header title
@@ -61,12 +65,18 @@ Header title | Quite long header title | One more header title    | Yet another 
 Outset row 1 | Cell content            | Cell content             | Cell content
 Outset row 2 | Longer cell content     | Even longer cell content | Cell content
 
-The following table is wide enough and must be restricted in width.
+The following table is wide enough and must be restricted in width by **breaking lines**
+inside cells:
 
 Header title | Quite long header title | One more header title    | Yet another header title | This header title must exceed the limit
 -------------|-------------------------|--------------------------|--------------------------|-------------------------
-Outset row 1 | Cell content            | Cell content             | Cell content             | This cell content must exceed the limit
 Outset row 2 | Longer cell content     | Even longer cell content | Cell content             | This cell content must exceed the limit
+
+This table contains very long words so it will exceed the page width.
+
+Header title | Quite long header title | One more header title    | Yet another header title
+-------------|-------------------------|--------------------------|-------------------------
+this_word_is_quite_long | this_word_is_quite_long_too | this_word_is_quite_long_again | this_word_is_quite_long_again_as_well
 
 ----------------------------------------------------------------------------------------------------
 # Complex inclusions

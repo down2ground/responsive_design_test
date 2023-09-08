@@ -17,11 +17,9 @@
 
         { "input": "sections/content.txt", "output": "sections/multipage.html",
             "title": "Multipage", "page-flows": ["sections", "nav"] },
-        { "input": "sections/content_overflown.txt", "output": "sections/multipage_overflown.html",
-            "title": "Multipage (overflown)", "page-flows": ["sections", "nav"] },
 
         { "input": "sections/content_dark.txt", "output": "sections/content_dark.html",
-            "title": "Dark theme", "page-flows": ["sections", "nav"] },
+            "title": "Multipage (dark)", "page-flows": ["sections", "nav"] },
 
         { "input": "sections/features.txt", "output": "sections/features.html",
             "title": "Features", "page-flows": ["sections", "nav"] },
@@ -37,13 +35,6 @@
             "page-flows": ["singlepage"],
             "template": "doc_src/templates/singlepage.html",
             "link-css": ["doc/layout/content.css", "doc/themes/dark/content_theme.css",
-                "doc/layout/flex.css"]
-        },
-        { "input": "sections/content_overflown.txt", "output": "sections/singlepage_overflown.html",
-            "title": "Single page (overflown)",
-            "page-flows": ["singlepage"],
-            "template": "doc_src/templates/singlepage.html",
-            "link-css": ["doc/layout/content.css", "doc/themes/light/content_theme.css",
                 "doc/layout/flex.css"]
         },
         
@@ -67,6 +58,7 @@
             "header": [
                 { "link": "readme.html", "title": "", "image": "favicon.png", "image_class": "logo_image" },
                 { "link": "readme.html", "title": "Home", "class": "toggle_wide_only_inline" },
+                { "link": "doc/content/sections/content_dark.html", "title": "Dark", "class": "toggle_wide_only_inline" },
                 { "link": "doc/content/index_page.html", "title": "Index", "class": "toggle_wide_only_inline" },
                 { "link": "doc/content/index_page.html", "title": "", "class": "toggle_narrow_only_inline",
                     "image": "layout/pict/search.png", "image_class": "header_image index_image" }
