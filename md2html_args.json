@@ -27,15 +27,13 @@
         { "input": "sections/content.txt", "output": "sections/singlepage.html", "title": "Single page",
             "page-flows": ["singlepage"],
             "template": "doc_src/templates/singlepage.html",
-            "link-css": ["doc/layout/content.css", "doc/themes/light/content_theme.css",
-                "doc/layout/flex.css"]
+            "link-css": ["doc/layout/content.css", "doc/themes/light/content_theme.css"]
         },
         { "input": "sections/content.txt", "output": "sections/singlepage_dark.html",
             "title": "Single page (dark)",
             "page-flows": ["singlepage"],
             "template": "doc_src/templates/singlepage.html",
-            "link-css": ["doc/layout/content.css", "doc/themes/dark/content_theme.css",
-                "doc/layout/flex.css"]
+            "link-css": ["doc/layout/content.css", "doc/themes/dark/content_theme.css"]
         },
         
         { "input": "sections/dummy_index_content.txt", "title": "Dummy index content",
