@@ -40,11 +40,7 @@
             "page-flows": ["sections", "nav"] }
     ],
     "plugins": {
-        "variables": {
-#            "logo": "<b><span style=\"color:#59f;margin-right:7px;\">Responsive</span></b>",
-            "show_source_link": true,
-            "theme": "light"
-        },
+        "variables": { "html_lang": "en", "show_source_link": true, "theme": "light" },
         "relative-paths": {
             "markers": ["path"],
             "paths": {
@@ -54,7 +50,8 @@
         },
         "page-flows": {
             "header": [
-                { "link": "readme.html", "title": "", "image": "favicon.png", "image_class": "logo_image" },
+                { "link": "readme.html", "title": "", "image": "favicon.png",
+                    "image_class": "logo_image", "image_alt": "Logo" },
                 { "link": "readme.html", "title": "Home", "class": "toggle_wide_only_inline" },
                 { "link": "doc/content/sections/content_dark.html", "title": "Dark", "class": "toggle_wide_only_inline" },
                 { "link": "doc/content/index_page.html", "title": "Index", "class": "toggle_wide_only_inline" },
