@@ -109,6 +109,7 @@ body {
 
 .sidebar {
     position: absolute;
+    overflow-y: auto;
     top: 0;
     left: 0;
     right: 0;
