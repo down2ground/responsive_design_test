@@ -56,7 +56,8 @@
                 { "link": "doc/content/sections/content_dark.html", "title": "Dark", "class": "toggle_wide_only_inline" },
                 { "link": "doc/content/index_page.html", "title": "Index", "class": "toggle_wide_only_inline" },
                 { "link": "doc/content/index_page.html", "title": "", "class": "toggle_narrow_only_inline",
-                    "image": "layout/pict/search.png", "image_class": "header_image index_image" }
+                    "image": "layout/pict/search.png", "image_class": "header_image index_image",
+                    "image_alt": "Index" }
             ],
             "header_wide_only": [
                 { "link": "https://github.com/arctrong/responsive_design_test", "title": "GitHub",
