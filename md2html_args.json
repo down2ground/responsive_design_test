@@ -40,7 +40,10 @@
             "page-flows": ["sections", "nav"] }
     ],
     "plugins": {
-        "variables": { "html_lang": "en", "show_source_link": true, "theme": "light" },
+        "variables": { "html_lang": "en", "show_source_link": true, "theme": "light", 
+            "link_js": [{"src": "review.js", "defer": false}],
+            "controls": ["<span id=\"reviewToggler\" class=\"header_image\" onclick=\"toggleReview();\" title=\"Скрыть/показать ответы\"></span>"]
+        },
         "relative-paths": {
             "markers": ["path"],
             "paths": {

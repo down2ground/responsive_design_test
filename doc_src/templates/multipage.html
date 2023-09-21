@@ -11,6 +11,8 @@
 {{{styles}}}
 <link rel="stylesheet" type="text/css" href="{{resource_path}}layout/flex.css">
 <link rel="stylesheet" type="text/css" href="{{resource_path}}custom.css">
+{{#link_js}}<script {{#defer}} defer{{/defer}} src="{{resource_path}}{{{src}}}"></script>
+{{/link_js}}
 </head>
 <body>
 
@@ -38,8 +40,8 @@ alt="No back">{{/nav.previous}}
 src="{{resource_path}}layout/pict/next_page_h21px.png" alt="Next"></a>{{/nav.next}}
 {{^nav.next}}<img class="headerNavArrows" src="{{resource_path}}layout/pict/next_page_h21px_inactive.png"
 alt="No next">{{/nav.next}}
-
-<span id="reviewToggler" class="header_image" onclick="toggleReview();return false;" title="Скрыть/показать ответы"></span>
+{{#controls}}{{{.}}}
+{{/controls}}
 
 <span class="headerTitle">{{title}}</span>
 
@@ -97,42 +99,6 @@ function toggleSidebar() {
         sidebar.style.display = ""
     }
 }
-</script>
-
-<script>
-var reviewIsOn = false
-var hiddenReviewClass = "hidden_review"
-var reviewIsOnClass = "review_is_on"
-function toggleReview() {
-    let reviewedElements = document.getElementsByClassName("rv")
-    
-    if (reviewIsOn) {
-        for (let el of reviewedElements) {
-            el.classList.remove(hiddenReviewClass)
-            el.removeEventListener("click", showRevewedContent)
-            el.classList.remove(reviewIsOnClass)
-        }
-        document.getElementById("reviewToggler").classList.remove("reviewHidden")
-        reviewIsOn = false
-    } else {
-        for (let el of reviewedElements) {
-            el.classList.add(hiddenReviewClass)
-            el.addEventListener("click", showRevewedContent)
-            el.classList.add(reviewIsOnClass)
-        }
-        document.getElementById("reviewToggler").classList.add("reviewHidden")
-        reviewIsOn = true
-    }
-}
-
-function showRevewedContent() {
-    if (this.classList.contains(hiddenReviewClass)) {
-        this.classList.remove(hiddenReviewClass)
-    } else {
-        this.classList.add(hiddenReviewClass)
-    }
-}
-
 </script>
 
 </body>

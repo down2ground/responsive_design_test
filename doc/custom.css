@@ -26,7 +26,7 @@
 }
 
 #reviewToggler::before {
-    content: url("pict/eyes.png"); 
+    content: url("pict/eyes_spline.png"); 
     position: absolute;
 } 
 
@@ -39,7 +39,7 @@
 }
 
 .hidden_review {
-    visibility: collapse;
+    visibility: hidden;
 }
 
 .hidden_review::before {
