@@ -6,6 +6,14 @@
     display: none;
 }
 
+.rv {
+  background-color: aliceblue;
+}
+
+.rv.review_is_on {
+  cursor: pointer;
+}
+
 #reviewToggler {
     display: inline-block;
     position: relative;
@@ -39,4 +47,5 @@
     position: absolute;
     cursor: pointer;
     visibility: initial;
+    margin-left: 5px;
 } 
