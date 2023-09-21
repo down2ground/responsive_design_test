@@ -42,6 +42,8 @@ src="../../layout/pict/previous_page_h21px.png" alt="Back"></a>
 <img class="headerNavArrows" src="../../layout/pict/next_page_h21px_inactive.png"
 alt="No next">
 
+<span class="header_image show_hide" onclick="toggleReview();return false;"></span>
+
 <span class="headerTitle">Dummy index content</span>
 
 </div>
@@ -297,6 +299,21 @@ function toggleSidebar() {
         sidebar.style.display = ""
     }
 }
+</script>
+
+<script>
+function toggleReview() {
+    let reviewedElements = document.getElementsByClassName("rv")
+    for (let el of reviewedElements) {
+        el.classList.add("hidden_review")
+        el.addEventListener("click", showRevewedContent)
+    }
+}
+
+function showRevewedContent() {
+    this.classList.remove("hidden_review")
+}
+
 </script>
 
 </body>

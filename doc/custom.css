@@ -6,3 +6,32 @@
     display: none;
 }
 
+span.show_hide {
+    display: inline-block;
+    position: relative;
+    width: 41px;
+    height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    top: 7px;
+}
+
+span.show_hide::after {
+    content: url("pict/eyes.png"); 
+    position: absolute;
+} 
+
+span.show_hide:active::after {
+    left: -41px;
+}
+
+.hidden_review {
+    visibility: hidden;
+}
+
+.hidden_review::before {
+    content: url("pict/closed_eye.png"); 
+    position: absolute;
+    cursor: pointer;
+    visibility: initial;
+} 

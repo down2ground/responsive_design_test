@@ -42,6 +42,8 @@ src="../../layout/pict/previous_page_h21px.png" alt="Back"></a>
 src="../../layout/pict/next_page_h21px.png" alt="Next"></a>
 
 
+<span class="header_image show_hide" onclick="toggleReview();return false;"></span>
+
 <span class="headerTitle">Features</span>
 
 </div>
@@ -88,6 +90,8 @@ src="../../layout/pict/next_page_h21px.png" alt="Next"></a>
 <li><a href="#footnotes">Footnotes</a></li>
 <li><a href="#anchors">Anchors</a></li>
 <li><a href="#attribute_lists_custom_name">Attribute Lists</a></li>
+<li><a href="#definition-lists">Definition Lists</a></li>
+<li><a href="#show-hide-content">Show-hide content</a></li>
 </ul>
 </div>
 <hr />
@@ -180,6 +184,77 @@ above, not below.</p>
 </tr>
 </tbody>
 </table>
+<hr />
+<h1 id="definition-lists">Definition Lists</h1>
+<dl>
+<dt>Apple</dt>
+<dd>Pomaceous fruit of plants of the genus Malus in
+the family Rosaceae.</dd>
+<dt>Orange</dt>
+<dd>The fruit of an evergreen tree of the genus Citrus.</dd>
+</dl>
+<p>For now it works only in the Python implementation.</p>
+<hr />
+<h1 id="show-hide-content">Show-hide content</h1>
+<p>This feature must allow for elements showing and hiding.</p>
+<p>Задать вопросы к данным утверждениям.</p>
+<table>
+<thead>
+<tr>
+<th>Утверждение</th>
+<th>Перевод</th>
+<th>Вопрос</th>
+<th>Перевод</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Радим у фирми.</td>
+<td class="rv">Работаю в компании.</td>
+<td class="rv">Где радите?</td>
+<td>Где работаете?</td>
+</tr>
+<tr>
+<td>Читам досадну књигу.</td>
+<td class="rv">Читаю скучную книгу.</td>
+<td class="rv">Шта радиш?</td>
+<td>Что делаете?</td>
+</tr>
+<tr>
+<td>Ана не пије пиво.</td>
+<td class="rv">Анна не пьет пиво.</td>
+<td class="rv">Да ли Ана пије пиво?</td>
+<td>Анна пьет пиво?</td>
+</tr>
+<tr>
+<td>Немамо времена.</td>
+<td class="rv">Нет времени.</td>
+<td class="rv">Да ли идете у шетњу?</td>
+<td>Идете на прогулку?</td>
+</tr>
+<tr>
+<td>Он живи у Немачкој.</td>
+<td class="rv">Он живет в Германии.</td>
+<td class="rv">Где он живи?</td>
+<td>Где он живет?</td>
+</tr>
+</tbody>
+</table>
+<p>Предавање <b class="rv">почиње</b> у 9 сати. Већ је <b class="rv">почело</b>. <em>(почињати &mdash; почети)</em>  <br />
+<sup class="rv"><em>Лекция начинается в 9 часов. Она уже началась.</em></sup>  <br />
+Шта вама <b class="rv">доноси</b> срећу у животу? <b class="rv">Донео</b> сам теби чинију. <em>(доносити &mdash; донети)</em>  <br />
+<sup class="rv"><em>Что вам приносит счастье в жизни? Я принес тебе миску.</em></sup>  <br />
+Кога си <b class="rv">срела</b> у библиотеци? <b class="rv">Срећем</b> их сваки дан у библиотеци. <em>(сретати &mdash; срести)</em>  <br />
+<sup class="rv"><em>Кого ты встретила в библиотеке? Я встречаю их каждый день в библиотеке.</em></sup></p>
+<p>Купила сам вам (<i class="rv">датив</i>) на пијаци (<i class="rv">локатив</i>) 
+пуно кромпира (<i class="rv">генетив</i>).</p>
+<p>Не плашим се<sup>1</sup> великих проблема (<i class="rv">генетив</i>).</p>
+<p>Покажи ми (<i class="rv">датив</i>) трећу књигу (<i class="rv">акузатив</i>).</p>
+<p>Господине (<i class="rv">вокатив</i>), сутра идемо аутом (<i class="rv">инстр.</i>) 
+у Рим (<i class="rv">акузатив</i>).</p>
+<p>Не свиђам се<sup>2</sup> твом брату (<i class="rv">датив</i>).</p>
+<p><sup>1</sup> <strong>плашити се</strong> &mdash; бояться.</p>
+<p><sup>2</sup> <strong>свидети се</strong> &mdash; понравиться, приглянуться.</p>
 <p>&nbsp;</p>
 <hr />
 
@@ -200,6 +275,21 @@ function toggleSidebar() {
         sidebar.style.display = ""
     }
 }
+</script>
+
+<script>
+function toggleReview() {
+    let reviewedElements = document.getElementsByClassName("rv")
+    for (let el of reviewedElements) {
+        el.classList.add("hidden_review")
+        el.addEventListener("click", showRevewedContent)
+    }
+}
+
+function showRevewedContent() {
+    this.classList.remove("hidden_review")
+}
+
 </script>
 
 </body>
