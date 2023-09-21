@@ -31,7 +31,7 @@
 }
 
 .hidden_review {
-    visibility: hidden;
+    visibility: collapse;
 }
 
 .hidden_review::before {
