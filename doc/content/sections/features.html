@@ -42,7 +42,7 @@ src="../../layout/pict/previous_page_h21px.png" alt="Back"></a>
 src="../../layout/pict/next_page_h21px.png" alt="Next"></a>
 
 
-<span class="header_image show_hide" onclick="toggleReview();return false;"></span>
+<span id="reviewToggler" class="header_image" onclick="toggleReview();return false;" title="Скрыть/показать ответы"></span>
 
 <span class="headerTitle">Features</span>
 
@@ -210,31 +210,31 @@ the family Rosaceae.</dd>
 <tbody>
 <tr>
 <td>Радим у фирми.</td>
-<td class="rv">Работаю в компании.</td>
+<td><span class="rv">Работаю в компании.  </span></td>
 <td class="rv">Где радите?</td>
 <td>Где работаете?</td>
 </tr>
 <tr>
 <td>Читам досадну књигу.</td>
-<td class="rv">Читаю скучную книгу.</td>
+<td><span class="rv">Читаю скучную книгу. </span></td>
 <td class="rv">Шта радиш?</td>
 <td>Что делаете?</td>
 </tr>
 <tr>
 <td>Ана не пије пиво.</td>
-<td class="rv">Анна не пьет пиво.</td>
+<td><span class="rv">Анна не пьет пиво.   </span></td>
 <td class="rv">Да ли Ана пије пиво?</td>
 <td>Анна пьет пиво?</td>
 </tr>
 <tr>
 <td>Немамо времена.</td>
-<td class="rv">Нет времени.</td>
+<td><span class="rv">Нет времени.         </span></td>
 <td class="rv">Да ли идете у шетњу?</td>
 <td>Идете на прогулку?</td>
 </tr>
 <tr>
 <td>Он живи у Немачкој.</td>
-<td class="rv">Он живет в Германии.</td>
+<td><span class="rv">Он живет в Германии. </span></td>
 <td class="rv">Где он живи?</td>
 <td>Где он живет?</td>
 </tr>
@@ -278,11 +278,24 @@ function toggleSidebar() {
 </script>
 
 <script>
+var reviewIsOn = false
 function toggleReview() {
     let reviewedElements = document.getElementsByClassName("rv")
-    for (let el of reviewedElements) {
-        el.classList.add("hidden_review")
-        el.addEventListener("click", showRevewedContent)
+    
+    if (reviewIsOn) {
+        for (let el of reviewedElements) {
+            el.classList.remove("hidden_review")
+            el.removeEventListener("click", showRevewedContent)
+        }
+        document.getElementById("reviewToggler").classList.remove("reviewHidden")
+        reviewIsOn = false
+    } else {
+        for (let el of reviewedElements) {
+            el.classList.add("hidden_review")
+            el.addEventListener("click", showRevewedContent)
+        }
+        document.getElementById("reviewToggler").classList.add("reviewHidden")
+        reviewIsOn = true
     }
 }
 

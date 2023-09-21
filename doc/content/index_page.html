@@ -42,7 +42,7 @@ alt="No back">
 <img class="headerNavArrows" src="../layout/pict/next_page_h21px_inactive.png"
 alt="No next">
 
-<span class="header_image show_hide" onclick="toggleReview();return false;"></span>
+<span id="reviewToggler" class="header_image" onclick="toggleReview();return false;" title="Скрыть/показать ответы"></span>
 
 <span class="headerTitle">Index</span>
 
@@ -225,11 +225,24 @@ function toggleSidebar() {
 </script>
 
 <script>
+var reviewIsOn = false
 function toggleReview() {
     let reviewedElements = document.getElementsByClassName("rv")
-    for (let el of reviewedElements) {
-        el.classList.add("hidden_review")
-        el.addEventListener("click", showRevewedContent)
+    
+    if (reviewIsOn) {
+        for (let el of reviewedElements) {
+            el.classList.remove("hidden_review")
+            el.removeEventListener("click", showRevewedContent)
+        }
+        document.getElementById("reviewToggler").classList.remove("reviewHidden")
+        reviewIsOn = false
+    } else {
+        for (let el of reviewedElements) {
+            el.classList.add("hidden_review")
+            el.addEventListener("click", showRevewedContent)
+        }
+        document.getElementById("reviewToggler").classList.add("reviewHidden")
+        reviewIsOn = true
     }
 }
 

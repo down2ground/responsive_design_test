@@ -6,7 +6,7 @@
     display: none;
 }
 
-span.show_hide {
+#reviewToggler {
     display: inline-block;
     position: relative;
     width: 41px;
@@ -14,14 +14,19 @@ span.show_hide {
     overflow: hidden;
     cursor: pointer;
     top: 7px;
+    margin-left: 7px;
 }
 
-span.show_hide::after {
+#reviewToggler::before {
     content: url("pict/eyes.png"); 
     position: absolute;
 } 
 
-span.show_hide:active::after {
+#reviewToggler::before {
+    left: 0;
+}
+
+#reviewToggler.reviewHidden::before {
     left: -41px;
 }
 
