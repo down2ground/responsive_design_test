@@ -33,17 +33,11 @@ class="header_item toggle_narrow_only_inline"
 href="doc/content/index_page.html"><img 
 class="header_image index_image" src="doc/layout/pict/search.png" alt="Index"></a><a 
 class="header_item toggle_wide_only_inline"
-href="https://github.com/arctrong/responsive_design_test"><span class="">GitHub</span></a>
-<a href="readme.txt" class="source_file toggle_wide_only_inline" title="Source text">&lt;/&gt;</a>
-
+href="https://github.com/arctrong/responsive_design_test"><span class="">GitHub</span></a><a href="readme.txt" class="source_file toggle_wide_only_inline" title="Source text">&lt;/&gt;</a>
 
 <img class="headerNavArrows" src="doc/layout/pict/previous_page_h21px_inactive.png"
-alt="No back">
-<a href="doc/content/sections/references.html" title="Next: References"><img class="headerNavArrows"
-src="doc/layout/pict/next_page_h21px.png" alt="Next"></a>
-
-<span id="reviewToggler" class="header_image" onclick="toggleReview();" title="Скрыть/показать ответы"></span>
-
+alt="No back"><a href="doc/content/sections/references.html" title="Next: References"><img class="headerNavArrows"
+src="doc/layout/pict/next_page_h21px.png" alt="Next"></a><span id="reviewToggler" class="header_image" onclick="toggleReview();" title="Скрыть/показать ответы"></span>
 <span class="headerTitle">Home</span>
 
 </div>
@@ -52,13 +46,9 @@ src="doc/layout/pict/next_page_h21px.png" alt="Next"></a>
 <div class="sidebar">
     <table class="sidebarAligner">
         <tr><td class="valign_top">
-            <div class="align_right toggle_narrow_only_block">
-            <a class="sidebar_item_inline align_right" href="https://github.com/arctrong/responsive_design_test">GitHub</a>
-            
-            <a href="readme.txt" class="sidebar_item_inline source_file align_right" 
-                title="Source text">&lt;/&gt;</a>
-            
-            </div>
+            <div class="align_right toggle_narrow_only_block">            <a class="sidebar_item_inline align_right" href="https://github.com/arctrong/responsive_design_test">GitHub</a>
+<a href="readme.txt" class="sidebar_item_inline source_file align_right" 
+                title="Source text">&lt;/&gt;</a></div>
             
             <a class="sidebar_item selected " href="readme.html">Home</a>
             <a class="sidebar_item " href="doc/content/sections/references.html">References</a>
@@ -76,7 +66,7 @@ src="doc/layout/pict/next_page_h21px.png" alt="Next"></a>
             <a class="sidebar_item " href="https://github.com/arctrong/md2html">md2html</a>
         </td></tr>
         <tr><td class="bottom valign_bottom"><span class="poweredBy">Powered by <a class="poweredByLink"
-            href="https://github.com/arctrong/md2html">md2html_py</a> 1.0.6</span>
+            href="https://github.com/arctrong/md2html">md2html_java</a> 1.0.7</span>
         </td></tr>
     </table>
 </div>
@@ -85,8 +75,6 @@ src="doc/layout/pict/next_page_h21px.png" alt="Next"></a>
 
 
 <p><img src="doc/pict/sample_picture.jpg" class="floatRight" /></p>
-
-<div class="toc">
 <ul>
 <li><a href="#whats-that">What's that</a></li>
 <li><a href="#materials">Materials</a></li>
@@ -94,9 +82,7 @@ src="doc/layout/pict/next_page_h21px.png" alt="Next"></a>
 <li><a href="#problems">Problems</a></li>
 <li><a href="#resolved">Resolved</a></li>
 </ul>
-</div>
 <p style="clear: both;"></p>
-
 <hr />
 <h1 id="whats-that">What's that</h1>
 <p>Attempt of creating responsive documentation design.</p>
@@ -104,43 +90,46 @@ src="doc/layout/pict/next_page_h21px.png" alt="Next"></a>
 <h1 id="materials">Materials</h1>
 <p>[<a href="doc/content/sections/references.html#ref_1">1</a>],
 [<a href="doc/content/sections/references.html#ref_2">2</a>],
-[<a href="doc/content/sections/references.html#ref_3">3</a>], 
+[<a href="doc/content/sections/references.html#ref_3">3</a>],
 [<a href="doc/content/sections/references.html#ref_4">4</a>],
 [<a href="doc/content/sections/references.html#ref_7">7</a>],
 [<a href="doc/content/sections/references.html#ref_8">8</a>],
 [<a href="doc/content/sections/references.html#ref_9">9</a>]</p>
 <hr />
 <h1 id="status-and-problems">Status and problems</h1>
-<p>The solution works much better that it did. But it needs more study of HTML flexible design 
+<p>The solution works much better that it did. But it needs more study of HTML flexible design
 implementation.</p>
 <p>The responsive behavior is implementing by adding:</p>
-<pre class="highlight"><code class="language-wrapped">&lt;meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"&gt;</code></pre>
+<pre><code class="language-wrapped">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0&quot;&gt;
+</code></pre>
 <hr />
 <h1 id="problems">Problems</h1>
 <ul>
 <li>
 <p>Consider he best practices in activating and deactivating of the sidebar. Now it's done using
-    JavaScript but probably pure CSS would be better. Also see [<a href="doc/content/sections/references.html#ref_6">6</a>].</p>
+JavaScript but probably pure CSS would be better. Also see [<a href="doc/content/sections/references.html#ref_6">6</a>].</p>
 </li>
 <li>
 <p>Look at the admonition problem:</p>
-<p><img alt="" src="doc/pict/admonition_problem.png" /></p>
+<p><img src="doc/pict/admonition_problem.png" alt="" /></p>
 </li>
 <li>
 <p>When content is scrolled horizontally, it's hidden behind the sidebar:</p>
-<p><img alt="" src="doc/pict/hidden_by_sidebar.png" /></p>
+<p><img src="doc/pict/hidden_by_sidebar.png" alt="" /></p>
 </li>
 <li>
 <p>Implement tables horizontal scrolling. It may be easily done by adding the following CSS
-    properties:</p>
-<pre class="highlight"><code>table {
+properties:</p>
+<pre><code>table {
     display: block;
     overflow-x: auto;
-}</code></pre>
+}
+</code></pre>
 <p>Also need to restore the setting for some other tables, like this:</p>
-<pre class="highlight"><code>table.sidebarAligner {
+<pre><code>table.sidebarAligner {
     display: table;
-}</code></pre>
+}
+</code></pre>
 <p>This works and there are no problems spotted by now, but there are opinions against this,
 see: [<a href="doc/content/sections/references.html#ref_10">10</a>], [<a href="doc/content/sections/references.html#ref_11">11</a>],
 [<a href="doc/content/sections/references.html#ref_12">12</a>], [<a href="doc/content/sections/references.html#ref_13">13</a>]. In sort:</p>
@@ -148,8 +137,8 @@ see: [<a href="doc/content/sections/references.html#ref_10">10</a>], [<a href="d
 <p>Setting <code>display: block</code> on a table body will strip the table of semantics and thus is not
 a good solution due to accessibility issues.</p>
 </blockquote>
-<p>The best way is wrapping every table into a <code>&lt;div&gt;</code> and applying the <code>display</code> and the 
-<code>overflow-x</code> property to this DIV, but this needs patching the Markdown engines both in the 
+<p>The best way is wrapping every table into a <code>&lt;div&gt;</code> and applying the <code>display</code> and the
+<code>overflow-x</code> property to this DIV, but this needs patching the Markdown engines both in the
 Python and the Java versions.</p>
 </li>
 </ul>
@@ -158,38 +147,40 @@ Python and the Java versions.</p>
 <ul>
 <li>
 <p>Drop down menu is not scrolled if exceeds the page height:</p>
-<p><img alt="" src="doc/pict/menu_dropdown_problem.png" /></p>
+<p><img src="doc/pict/menu_dropdown_problem.png" alt="" /></p>
 <p>Also see [<a href="doc/content/sections/references.html#ref_5">5</a>].</p>
 </li>
 <li>
-<p>Would be good to place the sidebar links like "Source text" and "GitHub" in one line:</p>
-<p><img alt="" src="doc/pict/place_in_one_line.png" /></p>
+<p>Would be good to place the sidebar links like &quot;Source text&quot; and &quot;GitHub&quot; in one line:</p>
+<p><img src="doc/pict/place_in_one_line.png" alt="" /></p>
 </li>
 <li>
 <p>Existing styles</p>
-<pre class="highlight"><code>a[name], a[id] {
+<pre><code>a[name], a[id] {
     height: 42px;
     display: block;
     margin-top: -42px;
-}</code></pre>
+}
+</code></pre>
 <p>don't allow targeted links highlight:</p>
-<pre class="highlight"><code>a[name]:target, a[id]:target, 
+<pre><code>a[name]:target, a[id]:target, 
 h1[id]:target, h2[id]:target, h3[id]:target, 
 h4[id]:target, h5[id]:target, h6[id]:target {
     background-color: #fff9dc;
-}</code></pre>
-<p><img alt="" src="doc/pict/targeted_links_problem.png" /></p>
+}
+</code></pre>
+<p><img src="doc/pict/targeted_links_problem.png" alt="" /></p>
 <p>Also see SO: <a href="https://stackoverflow.com/questions/11142125/css-highlight-a-div-when-the-id-is-linked-to-using-an-anchor">CSS- Highlight a div when the id is linked to using an anchor?</a>.</p>
 </li>
 </ul>
+
 <p>&nbsp;</p>
 <hr />
 
 <p style="margin-top:0px;margin-bottom:0px;text-align:right;"><img src="doc/layout/pict/previous_page_inactive.png"
 alt="No back">
 <a href="doc/content/sections/references.html" title="Next: References"><img 
-src="doc/layout/pict/next_page.png" alt="Next"></a>
-</p>
+src="doc/layout/pict/next_page.png" alt="Next"></a></p>
 
 <script>
 function toggleSidebar() {

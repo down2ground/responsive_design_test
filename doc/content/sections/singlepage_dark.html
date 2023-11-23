@@ -10,7 +10,6 @@
 
 <p><a href="multipage.html">Multipage layout</a> |
 <a href="singlepage.html">Single page layout</a></p>
-<div class="toc">
 <ul>
 <li><a href="#paragraphs-and-horizontal-lines">Paragraphs and horizontal lines</a></li>
 <li><a href="#lists">Lists</a></li>
@@ -18,7 +17,8 @@
 <li><a href="#block-quotes">Block quotes</a></li>
 <li><a href="#admonitions">Admonitions</a></li>
 <li><a href="#tables">Tables</a></li>
-<li><a href="#complex-inclusions">Complex inclusions</a><ul>
+<li><a href="#complex-inclusions">Complex inclusions</a>
+<ul>
 <li><a href="#inclusions-in-lists">Inclusions in lists</a></li>
 <li><a href="#inclusions-in-block-quote">Inclusions in block quote</a></li>
 <li><a href="#inclusions-in-admonitions">Inclusions in admonitions</a></li>
@@ -26,7 +26,6 @@
 </ul>
 </li>
 </ul>
-</div>
 <hr />
 <h1 id="paragraphs-and-horizontal-lines">Paragraphs and horizontal lines</h1>
 <p>Paragraphs and horizontal lines must not overflow the page right margin when the page resizes.
@@ -37,13 +36,15 @@ Also their width should not grow over the specified limit.</p>
 narrow.</p>
 <ol>
 <li>A first-level ordered list item. A first-level ordered list item. A first-level ordered list item.
-    A first-level  ordered list item.<ul>
+A first-level  ordered list item.
+<ul>
 <li>A second-level unordered list sub-item.</li>
 <li>A second-level unordered list sub-item. A second-level unordered list sub-item.
-    A second-level unordered list sub-item.A second-level unordered list sub-item.<ol>
+A second-level unordered list sub-item.A second-level unordered list sub-item.
+<ol>
 <li>A third-level ordered list sub-item.</li>
 <li>A third-level ordered list sub-item. A third-level ordered list sub-item.
-    A third-level ordered list sub-item.</li>
+A third-level ordered list sub-item.</li>
 </ol>
 </li>
 </ul>
@@ -51,9 +52,12 @@ narrow.</p>
 </ol>
 <hr />
 <h1 id="fenced-blocks">Fenced blocks</h1>
-<pre class="highlight"><code>Short not wrapped preformatted text. This line must NOT be wrapped.</code></pre>
-<pre class="highlight"><code class="language-wrapped-shell">Long wrapped preformatted text. This line MUST be WRAPPED when the text is too long or the window is too narrow.</code></pre>
-<pre class="highlight"><code class="language-code">Long not wrapped preformatted text. This line MUST be SCROLLED when the text is too long or the window is too narrow.</code></pre>
+<pre><code>Short not wrapped preformatted text. This line must NOT be wrapped.
+</code></pre>
+<pre><code class="language-wrapped-shell">Long wrapped preformatted text. This line MUST be WRAPPED when the text is too long or the window is too narrow.
+</code></pre>
+<pre><code class="language-code">Long not wrapped preformatted text. This line MUST be SCROLLED when the text is too long or the window is too narrow.
+</code></pre>
 <hr />
 <h1 id="block-quotes">Block quotes</h1>
 <blockquote>
@@ -73,67 +77,30 @@ Again, when the text is too long or the window is too narrow.</p>
 will still exceed the page limit.</strong></p>
 <table>
 <thead>
-<tr>
-<th>Header title</th>
-<th>Quite long header title</th>
-<th>One more header title</th>
-<th>Yet another header title</th>
-</tr>
+<tr><th>Header title</th><th>Quite long header title</th><th>One more header title</th><th>Yet another header title</th></tr>
 </thead>
 <tbody>
-<tr>
-<td>Outset row 1</td>
-<td>Cell content</td>
-<td>Cell content</td>
-<td>Cell content</td>
-</tr>
-<tr>
-<td>Outset row 2</td>
-<td>Longer cell content</td>
-<td>Even longer cell content</td>
-<td>Cell content</td>
-</tr>
+<tr><td>Outset row 1</td><td>Cell content</td><td>Cell content</td><td>Cell content</td></tr>
+<tr><td>Outset row 2</td><td>Longer cell content</td><td>Even longer cell content</td><td>Cell content</td></tr>
 </tbody>
 </table>
 <p>The following table is wide enough and must be restricted in width by <strong>breaking lines</strong>
 inside cells:</p>
 <table>
 <thead>
-<tr>
-<th>Header title</th>
-<th>Quite long header title</th>
-<th>One more header title</th>
-<th>Yet another header title</th>
-<th>This header title must exceed the limit</th>
-</tr>
+<tr><th>Header title</th><th>Quite long header title</th><th>One more header title</th><th>Yet another header title</th><th>This header title must exceed the limit</th></tr>
 </thead>
 <tbody>
-<tr>
-<td>Outset row 2</td>
-<td>Longer cell content</td>
-<td>Even longer cell content</td>
-<td>Cell content</td>
-<td>This cell content must exceed the limit</td>
-</tr>
+<tr><td>Outset row 2</td><td>Longer cell content</td><td>Even longer cell content</td><td>Cell content</td><td>This cell content must exceed the limit</td></tr>
 </tbody>
 </table>
 <p>This table contains very long words so it will exceed the page width.</p>
 <table>
 <thead>
-<tr>
-<th>Header title</th>
-<th>Quite long header title</th>
-<th>One more header title</th>
-<th>Yet another header title</th>
-</tr>
+<tr><th>Header title</th><th>Quite long header title</th><th>One more header title</th><th>Yet another header title</th></tr>
 </thead>
 <tbody>
-<tr>
-<td>this_word_is_quite_long</td>
-<td>this_word_is_quite_long_too</td>
-<td>this_word_is_quite_long_again</td>
-<td>this_word_is_quite_long_again_as_well</td>
-</tr>
+<tr><td>this_word_is_quite_long</td><td>this_word_is_quite_long_too</td><td>this_word_is_quite_long_again</td><td>this_word_is_quite_long_again_as_well</td></tr>
 </tbody>
 </table>
 <hr />
@@ -141,36 +108,25 @@ inside cells:</p>
 <h2 id="inclusions-in-lists">Inclusions in lists</h2>
 <ul>
 <li>Wrapped code block:
-    <pre class="highlight"><code class="language-wrapped-code">System.out.println("Wrapped code block. MUST be wrapped when the text is too long or the window is too narrow.");</code></pre></li>
-<li>
-<p>Inclusions into nested list items:</p>
+<pre><code class="language-wrapped-code">System.out.println(&quot;Wrapped code block. MUST be wrapped when the text is too long or the window is too narrow.&quot;);
+</code></pre>
+</li>
+<li>Inclusions into nested list items:
 <ol>
-<li>Code block:
-    <pre class="highlight"><code class="language-wrapped-code">System.out.println("Wrapped code block. MUST be wrapped.");</code></pre></li>
+<li>
+<p>Code block:</p>
+<pre><code class="language-wrapped-code">System.out.println(&quot;Wrapped code block. MUST be wrapped.&quot;);
+</code></pre>
+</li>
 <li>
 <p>Table:</p>
 <table>
 <thead>
-<tr>
-<th>Header title</th>
-<th>Quite long header title</th>
-<th>One more header title</th>
-<th>Yet another header title</th>
-</tr>
+<tr><th>Header title</th><th>Quite long header title</th><th>One more header title</th><th>Yet another header title</th></tr>
 </thead>
 <tbody>
-<tr>
-<td>Outset row 1</td>
-<td>Cell content</td>
-<td>Cell content</td>
-<td>Cell content</td>
-</tr>
-<tr>
-<td>Outset row 2</td>
-<td>Longer cell content</td>
-<td>Even longer cell content</td>
-<td>Cell content</td>
-</tr>
+<tr><td>Outset row 1</td><td>Cell content</td><td>Cell content</td><td>Cell content</td></tr>
+<tr><td>Outset row 2</td><td>Longer cell content</td><td>Even longer cell content</td><td>Cell content</td></tr>
 </tbody>
 </table>
 </li>
@@ -199,7 +155,8 @@ Block quote with a long content. Block quote with a long content.</p>
 </blockquote>
 <p><strong>Block quote with fenced blocks inside:</strong></p>
 <blockquote>
-<pre class="highlight"><code class="language-wrapped-shell">$ echo "Wrapped fenced blocks. MUST be wrapped when the text is too long or the window is too narrow."</code></pre>
+<pre><code class="language-wrapped-shell">$ echo &quot;Wrapped fenced blocks. MUST be wrapped when the text is too long or the window is too narrow.&quot;
+</code></pre>
 </blockquote>
 <p><strong>Block quote with admonition inside:</strong></p>
 <blockquote>
@@ -214,36 +171,25 @@ Must be wrapped. Must be wrapped. Must be wrapped. Must be wrapped. Must be wrap
 <p>Following is a list:</p>
 <ul>
 <li>Wrapped code block:
-    <pre class="highlight"><code class="language-wrapped-code">System.out.println("Wrapped code block. MUST be wrapped when the text is too long or the window is too narrow.");</code></pre></li>
-<li>
-<p>Inclusions into nested list items:</p>
+<pre><code class="language-wrapped-code">System.out.println(&quot;Wrapped code block. MUST be wrapped when the text is too long or the window is too narrow.&quot;);
+</code></pre>
+</li>
+<li>Inclusions into nested list items:
 <ol>
-<li>Code block:
-    <pre class="highlight"><code class="language-wrapped-code">System.out.println("Wrapped code block. MUST be wrapped.");</code></pre></li>
+<li>
+<p>Code block:</p>
+<pre><code class="language-wrapped-code">System.out.println(&quot;Wrapped code block. MUST be wrapped.&quot;);
+</code></pre>
+</li>
 <li>
 <p>Table:</p>
 <table>
 <thead>
-<tr>
-<th>Header title</th>
-<th>Quite long header title</th>
-<th>One more header title</th>
-<th>Yet another header title</th>
-</tr>
+<tr><th>Header title</th><th>Quite long header title</th><th>One more header title</th><th>Yet another header title</th></tr>
 </thead>
 <tbody>
-<tr>
-<td>Outset row 1</td>
-<td>Cell content</td>
-<td>Cell content</td>
-<td>Cell content</td>
-</tr>
-<tr>
-<td>Outset row 2</td>
-<td>Longer cell content</td>
-<td>Even longer cell content</td>
-<td>Cell content</td>
-</tr>
+<tr><td>Outset row 1</td><td>Cell content</td><td>Cell content</td><td>Cell content</td></tr>
+<tr><td>Outset row 2</td><td>Longer cell content</td><td>Even longer cell content</td><td>Cell content</td></tr>
 </tbody>
 </table>
 </li>
@@ -275,7 +221,8 @@ Block quote with a long content. Block quote with a long content.</p>
 <p><strong>Admonition with fenced blocks inside:</strong></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<pre class="highlight"><code class="language-wrapped-shell">$ echo "Wrapped fenced blocks. MUST be wrapped when the text is too long or the window is too narrow."</code></pre>
+<pre><code class="language-wrapped-shell">$ echo &quot;Wrapped fenced blocks. MUST be wrapped when the text is too long or the window is too narrow.&quot;
+</code></pre>
 </div>
 <p><strong>Admonition with admonition inside:</strong></p>
 <div class="admonition note">
@@ -294,39 +241,26 @@ Must be wrapped. Must be wrapped. Must be wrapped. Must be wrapped. Must be wrap
 <ul>
 <li>
 <p>Wrapped code block:</p>
-<pre class="highlight"><code class="language-wrapped-code">System.out.println("Wrapped code block. MUST be wrapped when the text is too long or the window is too narrow.");</code></pre>
+<pre><code class="language-wrapped-code">System.out.println(&quot;Wrapped code block. MUST be wrapped when the text is too long or the window is too narrow.&quot;);
+</code></pre>
 </li>
 <li>
 <p>Inclusions into nested list items:</p>
 <ol>
 <li>
 <p>Code block:</p>
-<pre class="highlight"><code class="language-wrapped-code">System.out.println("Wrapped code block. MUST be wrapped.");</code></pre>
+<pre><code class="language-wrapped-code">System.out.println(&quot;Wrapped code block. MUST be wrapped.&quot;);
+</code></pre>
 </li>
 <li>
 <p>Table:</p>
 <table>
 <thead>
-<tr>
-<th>Header title</th>
-<th>Quite long header title</th>
-<th>One more header title</th>
-<th>Yet another header title</th>
-</tr>
+<tr><th>Header title</th><th>Quite long header title</th><th>One more header title</th><th>Yet another header title</th></tr>
 </thead>
 <tbody>
-<tr>
-<td>Outset row 1</td>
-<td>Cell content</td>
-<td>Cell content</td>
-<td>Cell content</td>
-</tr>
-<tr>
-<td>Outset row 2</td>
-<td>Longer cell content</td>
-<td>Even longer cell content</td>
-<td>Cell content</td>
-</tr>
+<tr><td>Outset row 1</td><td>Cell content</td><td>Cell content</td><td>Cell content</td></tr>
+<tr><td>Outset row 2</td><td>Longer cell content</td><td>Even longer cell content</td><td>Cell content</td></tr>
 </tbody>
 </table>
 </li>
@@ -343,7 +277,8 @@ Must be wrapped. Must be wrapped. Must be wrapped. Must be wrapped. Must be wrap
 </div>
 <h2 id="high-leveled-inclusions">High-leveled inclusions</h2>
 <ul>
-<li>Inclusions into a list item:<ol>
+<li>Inclusions into a list item:
+<ol>
 <li>
 <p>Admonition:</p>
 <div class="admonition tip">
@@ -363,7 +298,8 @@ Must be wrapped. Must be wrapped. Must be wrapped. Must be wrapped. Must be wrap
 <ul>
 <li>
 <p>Item containing other elements:</p>
-<pre class="highlight"><code class="language-wrapped">Preformatted text. Preformatted text.</code></pre>
+<pre><code class="language-wrapped">Preformatted text. Preformatted text.
+</code></pre>
 </li>
 </ul>
 </div>
@@ -378,8 +314,9 @@ Must be wrapped. Must be wrapped. Must be wrapped. Must be wrapped. Must be wrap
 </li>
 </ul>
 
+
 <hr />
 <p><span class="poweredBy">Powered by <a class="poweredByLink" 
-href="https://github.com/arctrong/md2html">md2html_py</a> 1.0.6</span></p>
+href="https://github.com/arctrong/md2html">md2html_java</a> 1.0.7</span></p>
 </body>
 </html>
