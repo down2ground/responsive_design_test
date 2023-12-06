@@ -8,24 +8,24 @@
 <link rel="stylesheet" type="text/css" href="{{resource_path}}themes/{{theme}}/content_theme.css">
 <link rel="stylesheet" type="text/css" href="{{resource_path}}layout/layout.css">
 <link rel="stylesheet" type="text/css" href="{{resource_path}}themes/{{theme}}/layout_theme.css">
+<link rel="stylesheet" type="text/css" href="{{resource_path}}custom.css">
 {{{styles}}}
 <link rel="stylesheet" type="text/css" href="{{resource_path}}layout/flex.css">
-<link rel="stylesheet" type="text/css" href="{{resource_path}}custom.css">
 {{#link_js}}<script {{#defer}} defer{{/defer}} src="{{resource_path}}{{{src}}}"></script>
 {{/link_js}}
 </head>
 <body>
 
 <div class="header">
-<img id="burger" src="{{resource_path}}/layout/pict/burger.png" 
-onclick="toggleSidebar();return false;" class="toggle_narrow_only_inline" alt="Sidebar">
+{{#burger_open_image}}<img id="burger" src="{{resource_path}}{{{.}}}" 
+onclick="toggleSidebar();return false;" class="toggle_narrow_only_inline" alt="Sidebar">{{/burger_open_image}}
 {{#logo}}<span class="toggle_wide_only_inline">{{{.}}}</span>{{/logo}}
 {{#header}}<a 
 class="header_item{{#current}} selected{{/current}} {{{class}}}"
 href="{{link}}">{{#title}}<span class="{{{title_class}}}">{{{.}}}</span>{{/title}}{{#image}}<img 
 class="{{{image_class}}}" src="{{resource_path}}{{{.}}}" {{#image_alt}}alt="{{{.}}}"{{/image_alt}}>{{/image
 }}</a>{{/header}}{{#header_wide_only}}<a 
-class="header_item{{#current}} selected{{/current}} toggle_wide_only_inline"
+class="header_item{{#current}} selected{{/current}} toggle_wide_only_inline {{{class}}}"
 href="{{link}}">{{#title}}<span class="{{{title_class}}}">{{{.}}}</span>{{/title}}{{#image}}<img 
 class="{{{image_class}}}" src="{{resource_path}}{{{.}}}" />{{/image}}</a>{{/header_wide_only}}
 {{#show_source_link}}
@@ -35,7 +35,7 @@ class="{{{image_class}}}" src="{{resource_path}}{{{.}}}" />{{/image}}</a>{{/head
 {{#nav.previous}}<a href="{{link}}" title="Previous: {{title}}"><img class="headerNavArrows"
 src="{{resource_path}}layout/pict/previous_page_h21px.png" alt="Back"></a>{{/nav.previous}}
 {{^nav.previous}}<img class="headerNavArrows" src="{{resource_path}}layout/pict/previous_page_h21px_inactive.png"
-alt="No back">{{/nav.previous}}
+alt="No back">{{/nav.previous}} 
 {{#nav.next}}<a href="{{link}}" title="Next: {{title}}"><img class="headerNavArrows"
 src="{{resource_path}}layout/pict/next_page_h21px.png" alt="Next"></a>{{/nav.next}}
 {{^nav.next}}<img class="headerNavArrows" src="{{resource_path}}layout/pict/next_page_h21px_inactive.png"
@@ -59,12 +59,12 @@ alt="No next">{{/nav.next}}
             {{^source_file}}<span class="sidebar_item_inline source_file inactive align_right"
                 >&lt;/&gt;</span>{{/source_file}}
             {{/show_source_link}}</div>
-            {{#sidebar}}
+            {{#sidebar}}<div class="sidebar_block">
             {{#not_empty}}{{#title}}<h3>{{.}}</h3>{{/title}}{{/not_empty}}
             {{#.}}
             <a class="sidebar_item{{#current}} selected{{/current}} {{{class}}}" href="{{link}}">{{title}}</a>
             {{/.}}
-            {{/sidebar}}
+            </div>{{/sidebar}}
         </td></tr>
         <tr><td class="bottom valign_bottom"><span class="poweredBy">Powered by <a class="poweredByLink"
             href="https://github.com/arctrong/md2html">{{exec_name}}</a> {{exec_version}}</span>

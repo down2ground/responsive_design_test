@@ -24,6 +24,9 @@
         { "input": "sections/features.txt", "output": "sections/features.html",
             "title": "Features", "page-flows": ["sections", "nav"] },
 
+        { "input": "sections/fenced_blocks.txt", "output": "sections/fenced_blocks.html",
+            "title": "Fenced blocks", "page-flows": ["sections", "nav"] },
+
         { "input": "sections/content.txt", "output": "sections/singlepage.html", "title": "Single page",
             "page-flows": ["singlepage"],
             "template": "doc_src/templates/singlepage.html",
@@ -40,7 +43,11 @@
             "page-flows": ["sections", "nav"] }
     ],
     "plugins": {
-        "variables": { "html_lang": "en", "show_source_link": true, "theme": "light", 
+        "variables": {
+            "html_lang": "en",
+            "burger_open_image": "layout/pict/burger.png",
+            "show_source_link": true,
+            "theme": "light", 
             "link_js": [{"src": "review.js", "defer": false}],
             "controls": ["<span id=\"reviewToggler\" class=\"header_image\" onclick=\"toggleReview();\" title=\"Скрыть/показать ответы\"></span>"]
         },

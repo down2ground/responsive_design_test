@@ -398,5 +398,6 @@
     "entry" : "your",
     "link" : "sections/dummy_index_content.html#index_entry_index_98",
     "title" : "Dummy index content"
-  } ]
+  } ],
+  "doc/content/sections/fenced_blocks.html" : [ ]
 }

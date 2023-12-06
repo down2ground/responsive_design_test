@@ -8,17 +8,16 @@
 <link rel="stylesheet" type="text/css" href="doc/themes/light/content_theme.css">
 <link rel="stylesheet" type="text/css" href="doc/layout/layout.css">
 <link rel="stylesheet" type="text/css" href="doc/themes/light/layout_theme.css">
+<link rel="stylesheet" type="text/css" href="doc/custom.css">
 
 <link rel="stylesheet" type="text/css" href="doc/layout/flex.css">
-<link rel="stylesheet" type="text/css" href="doc/custom.css">
 <script  src="doc/review.js"></script>
 </head>
 <body>
 
 <div class="header">
-<img id="burger" src="doc//layout/pict/burger.png" 
+<img id="burger" src="doc/layout/pict/burger.png" 
 onclick="toggleSidebar();return false;" class="toggle_narrow_only_inline" alt="Sidebar">
-
 <a 
 class="header_item selected "
 href="readme.html"><img 
@@ -32,11 +31,11 @@ href="doc/content/index_page.html"><span class="">Index</span></a><a
 class="header_item toggle_narrow_only_inline"
 href="doc/content/index_page.html"><img 
 class="header_image index_image" src="doc/layout/pict/search.png" alt="Index"></a><a 
-class="header_item toggle_wide_only_inline"
+class="header_item toggle_wide_only_inline "
 href="https://github.com/arctrong/responsive_design_test"><span class="">GitHub</span></a><a href="readme.txt" class="source_file toggle_wide_only_inline" title="Source text">&lt;/&gt;</a>
 
 <img class="headerNavArrows" src="doc/layout/pict/previous_page_h21px_inactive.png"
-alt="No back"><a href="doc/content/sections/references.html" title="Next: References"><img class="headerNavArrows"
+alt="No back"> <a href="doc/content/sections/references.html" title="Next: References"><img class="headerNavArrows"
 src="doc/layout/pict/next_page_h21px.png" alt="Next"></a><span id="reviewToggler" class="header_image" onclick="toggleReview();" title="Скрыть/показать ответы"></span>
 <span class="headerTitle">Home</span>
 
@@ -49,22 +48,27 @@ src="doc/layout/pict/next_page_h21px.png" alt="Next"></a><span id="reviewToggler
             <div class="align_right toggle_narrow_only_block">            <a class="sidebar_item_inline align_right" href="https://github.com/arctrong/responsive_design_test">GitHub</a>
 <a href="readme.txt" class="sidebar_item_inline source_file align_right" 
                 title="Source text">&lt;/&gt;</a></div>
+<div class="sidebar_block">
             
             <a class="sidebar_item selected " href="readme.html">Home</a>
             <a class="sidebar_item " href="doc/content/sections/references.html">References</a>
             <a class="sidebar_item " href="doc/content/sections/multipage.html">Multipage</a>
             <a class="sidebar_item " href="doc/content/sections/content_dark.html">Multipage (dark)</a>
             <a class="sidebar_item " href="doc/content/sections/features.html">Features</a>
+            <a class="sidebar_item " href="doc/content/sections/fenced_blocks.html">Fenced blocks</a>
             <a class="sidebar_item " href="doc/content/sections/dummy_index_content.html">Dummy index content</a>
+            </div><div class="sidebar_block">
             <h3>Single-page</h3>
             <a class="sidebar_item " href="doc/content/sections/singlepage.html">Single page</a>
             <a class="sidebar_item " href="doc/content/sections/singlepage_dark.html">Single page (dark)</a>
+            </div><div class="sidebar_block">
             <h3>Other projects</h3>
             <a class="sidebar_item " href="project/flexible_demo.html">flexible_demo</a>
+            </div><div class="sidebar_block">
             <h3>Useful links</h3>
             <a class="sidebar_item " href="https://daringfireball.net/projects/markdown/">Markdown</a>
             <a class="sidebar_item " href="https://github.com/arctrong/md2html">md2html</a>
-        </td></tr>
+            </div>        </td></tr>
         <tr><td class="bottom valign_bottom"><span class="poweredBy">Powered by <a class="poweredByLink"
             href="https://github.com/arctrong/md2html">md2html_java</a> 1.0.7</span>
         </td></tr>
