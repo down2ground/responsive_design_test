@@ -49,3 +49,60 @@
     visibility: initial;
     margin-left: 5px;
 } 
+
+
+pre > code.language-lang, pre > code.language-wrapped-lang {
+  color: darkred;
+  background-color: beige;
+  border-color: darkred;
+}
+
+pre > code.language-dlang, pre > code.language-wrapped-dlang {
+  color: floralwhite;
+  background-color: darkslategray;
+  border-color: darkslategray;
+}
+
+pre > code.language-wrapped-lang, pre > code.language-wrapped-dlang {
+  white-space: pre-wrap;
+  word-break: break-word;
+  min-width: unset;
+}
+
+pre > code.language-lang::before, pre > code.language-wrapped-lang::before,
+pre > code.language-dlang::before, pre > code.language-wrapped-dlang::before
+{
+    display: block;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: bold;
+    color: black;
+    /* text-align: right; */
+    position: relative;
+    /* background-color: #d0e0ed; */
+    top: -5px;
+    margin-top: -4px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    font-size: 0.8rem;
+}
+
+pre > code.language-lang::before, pre > code.language-wrapped-lang::before {
+    content: "Language";
+    color: darkred;
+    border-bottom-color: darkred;
+}
+
+pre > code.language-dlang::before, pre > code.language-wrapped-dlang::before {
+    content: "Dark language";
+    color: floralwhite;
+    border-bottom-color: floralwhite;
+}
+
+
+
+
