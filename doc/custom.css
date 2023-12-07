@@ -50,6 +50,7 @@
     margin-left: 5px;
 } 
 
+/* Fenced code labels, v. 1  */
 
 pre > code.language-lang, pre > code.language-wrapped-lang {
   color: darkred;
@@ -107,7 +108,7 @@ pre > code.language-dlang::before, pre > code.language-wrapped-dlang::before {
 
 
 
-
+/* Fenced code labels, v. 2  */
 
 pre > code.language-js, pre > code.language-wrapped-js,
 pre > code.language-djs, pre > code.language-wrapped-djs {
@@ -164,6 +165,71 @@ pre > code.language-djs::before, pre > code.language-wrapped-djs::before {
     /* color: floralwhite; */
     border-color: darkslategray;
 }
+
+
+
+/* Fenced code labels, v. 3  */
+
+pre > code.language-py, pre > code.language-wrapped-py,
+pre > code.language-dpy, pre > code.language-wrapped-dpy {
+  padding-top: 40px;
+}
+
+pre > code.language-wrapped-py, pre > code.language-wrapped-dpy {
+  white-space: pre-wrap;
+  word-break: break-word;
+  min-width: unset;
+}
+
+pre > code.language-py::before, pre > code.language-wrapped-py::before,
+pre > code.language-dpy::before, pre > code.language-wrapped-dpy::before
+{
+    display: block;
+    position: absolute;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    
+    font-weight: bold;
+    text-decoration: underline;
+    
+    font-size: 0.8rem;
+    margin-top: -32px;
+    padding-right: 7px;
+    padding-bottom: 3px;
+}
+
+pre > code.language-py, pre > code.language-wrapped-py {
+  color: darkred;
+  background-color: beige;
+  border-color: darkred;
+}
+
+pre > code.language-dpy, pre > code.language-wrapped-dpy {
+  color: floralwhite;
+  background-color: darkslategray;
+  border-color: darkslategray;
+}
+
+pre > code.language-py::before, pre > code.language-wrapped-py::before {
+    content: "Python";
+}
+
+pre > code.language-dpy::before, pre > code.language-wrapped-dpy::before {
+    content: "Dark Python";
+}
+
+.blockSrc {
+    margin-bottom: 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: darkslategray;
+}
+
+.blockSrc+pre {
+    margin-top: 5px;
+}
+
+
+
 
 
 
