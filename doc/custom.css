@@ -106,3 +106,64 @@ pre > code.language-dlang::before, pre > code.language-wrapped-dlang::before {
 
 
 
+
+
+
+pre > code.language-js, pre > code.language-wrapped-js,
+pre > code.language-djs, pre > code.language-wrapped-djs {
+  padding-top: 40px;
+}
+
+pre > code.language-wrapped-js, pre > code.language-wrapped-djs {
+  white-space: pre-wrap;
+  word-break: break-word;
+  min-width: unset;
+}
+
+pre > code.language-js::before, pre > code.language-wrapped-js::before,
+pre > code.language-djs::before, pre > code.language-wrapped-djs::before
+{
+    display: block;
+    position: absolute;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    
+    font-size: 0.8rem;
+    margin-top: -32px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 3px;
+}
+
+pre > code.language-js, pre > code.language-wrapped-js {
+  color: darkred;
+  background-color: beige;
+  border-color: darkred;
+}
+
+pre > code.language-djs, pre > code.language-wrapped-djs {
+  color: floralwhite;
+  background-color: darkslategray;
+  border-color: darkslategray;
+}
+
+pre > code.language-js::before, pre > code.language-wrapped-js::before {
+    content: "JavaScript";
+    /* color: darkred; */
+    border-color: darkred;
+}
+
+pre > code.language-djs::before, pre > code.language-wrapped-djs::before {
+    content: "Dark JavaScript";
+    /* color: floralwhite; */
+    border-color: darkslategray;
+}
+
+
+
