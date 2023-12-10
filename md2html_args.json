@@ -47,7 +47,8 @@
             "html_lang": "en",
             "burger_open_image": "layout/pict/burger.png",
             "show_source_link": true,
-            "theme": "light", 
+            "theme": "light",
+            "add_more_prog_langs": true,
             "link_js": [{"src": "review.js", "defer": false}],
             "controls": ["<span id=\"reviewToggler\" class=\"header_image\" onclick=\"toggleReview();\" title=\"Скрыть/показать ответы\"></span>"]
         },
