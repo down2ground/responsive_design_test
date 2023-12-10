@@ -1,0 +1,252 @@
+[TOC]
+
+----------------------------------------------------------------------------------------------------
+# About this section
+
+In this section an attempt is made to restyle the fenced blocks.
+
+----------------------------------------------------------------------------------------------------
+# Final version {#all_languages}
+
+<div class="blockSrc">sample_file.txt</div>
+
+`````
+This is a preformatted block that preserves the line breaks.
+It May be inserted in the form like this:
+
+````
+This text will be
+    preformatted.
+````
+`````
+
+````text
+This is a light code block example.
+    It is also preformatted
+    but has no background (and probably no border).
+````
+
+Program language code block (marked as `code`):
+
+<div class="blockSrc"><a href="#all_languages">another_sample_file.txt</a></div>
+
+````code
+System.out.println("This block demonstrates " + 
+    "a source code in a program language.");
+````
+
+Shell code block (marked as `shell`):
+
+````shell
+>>> print("This may be any shell where Python IDLE works.")
+This may be any shell where Python IDLE works.
+````
+
+````py
+def factorial(n):
+    if n == 0:
+        return 1
+    return factorial(n - 1) * n
+````
+
+````java
+BiPredicate<String, String> bp1 = String::startsWith;
+System.out.println(bp1.test("abcde", "abc")); // true
+````
+
+````c
+#include <stdio.h>
+
+int main(void) {
+    printf("hello, world\n");
+}
+````
+
+````cpp
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, world!\n";
+}
+````
+
+````js
+let testSuite = [
+    {label: "Summing zeros",      body: () => {return sum(0, 0) == 0}},
+    {label: "Summing non-zeros",  body: () => {return sum(1, 1) == 2}}
+]
+````
+
+````sql
+create table employee (
+    dept_id      int,
+    employee_id  int primary key,
+    salary       decimal
+);
+````
+
+````alg
+DFS(s): // s is the starting node
+    mark s as explored 
+    for each unexplored neighbor v of s:
+        DFS(v) 
+````
+
+````xml
+<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>3.8.1</version>
+    <scope>test</scope>
+</dependency>
+````
+
+````html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Hello world!</title>
+    </head>
+    <body>
+        <h1>Hello</h1>
+        <p>Hello world!</p>
+    </body>
+</html>
+````
+
+````css
+pre>code, div.code {
+    display: block;
+    white-space: pre;
+    padding: 10px;
+    overflow-x: auto;
+}
+````
+
+````json
+{
+    "name": "Kitchen chair",
+    "price": 87.5,
+    "available": true
+}
+````
+
+````ini
+[owner]
+name = John Doe
+organization = Acme Widgets Inc.
+
+[database]
+; use IP address in case network name resolution is not working
+server = 192.0.2.62     
+port = 143
+file = "bom.dat"
+````
+
+````prop
+# A .properties file example
+website=https://en.wikipedia.org/
+language:English
+# Keys with the same name will be overwritten by the key that is the furthest in a file
+duplicateKey = first
+duplicateKey = second
+````
+
+Here is a configuration of some other kind:
+
+````conf
+services:
+  frontend:
+    image: example/webapp
+    networks:
+      - front-tier
+      - back-tier
+````
+
+````unixscript
+#!/bin/sh
+if [ -z $1 ]; then
+    echo a{1,2,3}
+else
+    echo b{5,6,7}
+fi
+# will output: "a{1,2,3}" or "b{5,6,7}"
+````
+
+````bash
+#!/bin/bash
+if [ -z $1 ]; then
+    echo a{1,2,3}
+else
+    echo b{5,6,7}
+fi
+# will output: "a1 a2 a3" or "b5 b6 b7"
+````
+
+````cmd
+@echo off
+
+set CANNOT_PROCEED=
+call :check_file_or_dir doc_src
+if [%CANNOT_PROCEED%]==[Y] (
+    echo Some problems found (see above^). Nothing has been done
+    exit /b
+)
+xcopy %MD2HTML_HOME%\bin\new_project\doc_src doc_src\ /e
+exit /b
+
+:check_file_or_dir
+if exist %1 (
+    echo File or directory '%1' already exists
+    set CANNOT_PROCEED=Y
+)
+exit /b
+````
+
+````bat
+@echo off
+echo BAT and CMD files are considered to be the same.
+````
+
+````unixshell
+$ for i in {1..6..2}; do echo "Welcome person #$i!"; done
+Welcome person #1!
+Welcome person #3!
+Welcome person #5!
+````
+
+````winshell
+>cd %TEMP%
+
+>echo I write a file > temp_file.txt
+
+>type temp_file.txt
+I write a file
+````
+
+----------------------------------------------------------------------------------------------------
+# Alternative (not accepted)
+
+````somelang
+let plus = function(a, b) {
+    return a + b
+}
+console.log(plus(1, 3)) // 4
+let veryLongString = "Very long string, very long string, very long string, very long string."
+````
+
+````dsomelang
+let plus = function(a, b) {
+    return a + b
+}
+console.log(plus(1, 3)) // 4
+let veryLongString = "Very long string, very long string, very long string, very long string."
+````
+
+
+
+
+
+
+

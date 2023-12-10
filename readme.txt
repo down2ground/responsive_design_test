@@ -92,7 +92,7 @@ The responsive behavior is implementing by adding:
 
 - Existing styles
 
-    ````
+    ````css
     a[name], a[id] {
         height: 42px;
         display: block;
@@ -102,7 +102,7 @@ The responsive behavior is implementing by adding:
     
     don't allow targeted links highlight:
     
-    ````
+    ````css
     a[name]:target, a[id]:target, 
     h1[id]:target, h2[id]:target, h3[id]:target, 
     h4[id]:target, h5[id]:target, h6[id]:target {

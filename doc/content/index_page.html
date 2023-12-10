@@ -5,7 +5,9 @@
 <link rel="shortcut icon" type="image/png" href="../favicon.png">
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="../layout/content.css">
+<link rel="stylesheet" type="text/css" href="../layout/more_prog_langs.css">
 <link rel="stylesheet" type="text/css" href="../themes/light/content_theme.css">
+<link rel="stylesheet" type="text/css" href="../themes/light/more_prog_langs_theme.css">
 <link rel="stylesheet" type="text/css" href="../layout/layout.css">
 <link rel="stylesheet" type="text/css" href="../themes/light/layout_theme.css">
 <link rel="stylesheet" type="text/css" href="../custom.css">
@@ -18,6 +20,7 @@
 <div class="header">
 <img id="burger" src="../layout/pict/burger.png" 
 onclick="toggleSidebar();return false;" class="toggle_narrow_only_inline" alt="Sidebar">
+
 <a 
 class="header_item "
 href="../../readme.html"><img 
@@ -33,10 +36,16 @@ href="index_page.html"><img
 class="header_image index_image" src="../layout/pict/search.png" alt="Index"></a><a 
 class="header_item toggle_wide_only_inline "
 href="https://github.com/arctrong/responsive_design_test"><span class="">GitHub</span></a>
+
 <span class="source_file inactive toggle_wide_only_inline">&lt;/&gt;</span>
+
 <img class="headerNavArrows" src="../layout/pict/previous_page_h21px_inactive.png"
-alt="No back"> <img class="headerNavArrows" src="../layout/pict/next_page_h21px_inactive.png"
-alt="No next"><span id="reviewToggler" class="header_image" onclick="toggleReview();" title="Скрыть/показать ответы"></span>
+alt="No back"> 
+
+<img class="headerNavArrows" src="../layout/pict/next_page_h21px_inactive.png"
+alt="No next">
+<span id="reviewToggler" class="header_image" onclick="toggleReview();" title="Скрыть/показать ответы"></span>
+
 <span class="headerTitle">Index</span>
 
 </div>
@@ -45,10 +54,14 @@ alt="No next"><span id="reviewToggler" class="header_image" onclick="toggleRevie
 <div class="sidebar">
     <table class="sidebarAligner">
         <tr><td class="valign_top">
-            <div class="align_right toggle_narrow_only_block">            <a class="sidebar_item_inline align_right" href="https://github.com/arctrong/responsive_design_test">GitHub</a>
-<span class="sidebar_item_inline source_file inactive align_right"
-                >&lt;/&gt;</span></div>
-<div class="sidebar_block">
+            <div class="align_right toggle_narrow_only_block">
+            <a class="sidebar_item_inline align_right" href="https://github.com/arctrong/responsive_design_test">GitHub</a>
+            
+            
+            <span class="sidebar_item_inline source_file inactive align_right"
+                >&lt;/&gt;</span>
+            </div>
+            <div class="sidebar_block">
             
             <a class="sidebar_item " href="../../readme.html">Home</a>
             <a class="sidebar_item " href="sections/references.html">References</a>
@@ -56,6 +69,7 @@ alt="No next"><span id="reviewToggler" class="header_image" onclick="toggleRevie
             <a class="sidebar_item " href="sections/content_dark.html">Multipage (dark)</a>
             <a class="sidebar_item " href="sections/features.html">Features</a>
             <a class="sidebar_item " href="sections/fenced_blocks.html">Fenced blocks</a>
+            <a class="sidebar_item " href="sections/fenced_blocks_dark.html">Fenced blocks (dark)</a>
             <a class="sidebar_item " href="sections/dummy_index_content.html">Dummy index content</a>
             </div><div class="sidebar_block">
             <h3>Single-page</h3>
@@ -68,9 +82,10 @@ alt="No next"><span id="reviewToggler" class="header_image" onclick="toggleRevie
             <h3>Useful links</h3>
             <a class="sidebar_item " href="https://daringfireball.net/projects/markdown/">Markdown</a>
             <a class="sidebar_item " href="https://github.com/arctrong/md2html">md2html</a>
-            </div>        </td></tr>
+            </div>
+        </td></tr>
         <tr><td class="bottom valign_bottom"><span class="poweredBy">Powered by <a class="poweredByLink"
-            href="https://github.com/arctrong/md2html">md2html_java</a> 1.0.7</span>
+            href="https://github.com/arctrong/md2html">md2html_py</a> 1.0.7</span>
         </td></tr>
     </table>
 </div>

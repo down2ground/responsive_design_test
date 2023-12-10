@@ -5,7 +5,9 @@
 <link rel="shortcut icon" type="image/png" href="../../favicon.png">
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="../../layout/content.css">
+<link rel="stylesheet" type="text/css" href="../../layout/more_prog_langs.css">
 <link rel="stylesheet" type="text/css" href="../../themes/light/content_theme.css">
+<link rel="stylesheet" type="text/css" href="../../themes/light/more_prog_langs_theme.css">
 <link rel="stylesheet" type="text/css" href="../../layout/layout.css">
 <link rel="stylesheet" type="text/css" href="../../themes/light/layout_theme.css">
 <link rel="stylesheet" type="text/css" href="../../custom.css">
@@ -18,6 +20,7 @@
 <div class="header">
 <img id="burger" src="../../layout/pict/burger.png" 
 onclick="toggleSidebar();return false;" class="toggle_narrow_only_inline" alt="Sidebar">
+
 <a 
 class="header_item "
 href="../../../readme.html"><img 
@@ -32,11 +35,17 @@ class="header_item toggle_narrow_only_inline"
 href="../index_page.html"><img 
 class="header_image index_image" src="../../layout/pict/search.png" alt="Index"></a><a 
 class="header_item toggle_wide_only_inline "
-href="https://github.com/arctrong/responsive_design_test"><span class="">GitHub</span></a><a href="../../../doc_src/sections/features.txt" class="source_file toggle_wide_only_inline" title="Source text">&lt;/&gt;</a>
+href="https://github.com/arctrong/responsive_design_test"><span class="">GitHub</span></a>
+<a href="../../../doc_src/sections/features.txt" class="source_file toggle_wide_only_inline" title="Source text">&lt;/&gt;</a>
 
 <a href="content_dark.html" title="Previous: Multipage (dark)"><img class="headerNavArrows"
-src="../../layout/pict/previous_page_h21px.png" alt="Back"></a> <a href="fenced_blocks.html" title="Next: Fenced blocks"><img class="headerNavArrows"
-src="../../layout/pict/next_page_h21px.png" alt="Next"></a><span id="reviewToggler" class="header_image" onclick="toggleReview();" title="Скрыть/показать ответы"></span>
+src="../../layout/pict/previous_page_h21px.png" alt="Back"></a>
+ 
+<a href="fenced_blocks.html" title="Next: Fenced blocks"><img class="headerNavArrows"
+src="../../layout/pict/next_page_h21px.png" alt="Next"></a>
+
+<span id="reviewToggler" class="header_image" onclick="toggleReview();" title="Скрыть/показать ответы"></span>
+
 <span class="headerTitle">Features</span>
 
 </div>
@@ -45,10 +54,14 @@ src="../../layout/pict/next_page_h21px.png" alt="Next"></a><span id="reviewToggl
 <div class="sidebar">
     <table class="sidebarAligner">
         <tr><td class="valign_top">
-            <div class="align_right toggle_narrow_only_block">            <a class="sidebar_item_inline align_right" href="https://github.com/arctrong/responsive_design_test">GitHub</a>
-<a href="../../../doc_src/sections/features.txt" class="sidebar_item_inline source_file align_right" 
-                title="Source text">&lt;/&gt;</a></div>
-<div class="sidebar_block">
+            <div class="align_right toggle_narrow_only_block">
+            <a class="sidebar_item_inline align_right" href="https://github.com/arctrong/responsive_design_test">GitHub</a>
+            
+            <a href="../../../doc_src/sections/features.txt" class="sidebar_item_inline source_file align_right" 
+                title="Source text">&lt;/&gt;</a>
+            
+            </div>
+            <div class="sidebar_block">
             
             <a class="sidebar_item " href="../../../readme.html">Home</a>
             <a class="sidebar_item " href="references.html">References</a>
@@ -56,6 +69,7 @@ src="../../layout/pict/next_page_h21px.png" alt="Next"></a><span id="reviewToggl
             <a class="sidebar_item " href="content_dark.html">Multipage (dark)</a>
             <a class="sidebar_item selected " href="features.html">Features</a>
             <a class="sidebar_item " href="fenced_blocks.html">Fenced blocks</a>
+            <a class="sidebar_item " href="fenced_blocks_dark.html">Fenced blocks (dark)</a>
             <a class="sidebar_item " href="dummy_index_content.html">Dummy index content</a>
             </div><div class="sidebar_block">
             <h3>Single-page</h3>
@@ -68,9 +82,10 @@ src="../../layout/pict/next_page_h21px.png" alt="Next"></a><span id="reviewToggl
             <h3>Useful links</h3>
             <a class="sidebar_item " href="https://daringfireball.net/projects/markdown/">Markdown</a>
             <a class="sidebar_item " href="https://github.com/arctrong/md2html">md2html</a>
-            </div>        </td></tr>
+            </div>
+        </td></tr>
         <tr><td class="bottom valign_bottom"><span class="poweredBy">Powered by <a class="poweredByLink"
-            href="https://github.com/arctrong/md2html">md2html_java</a> 1.0.7</span>
+            href="https://github.com/arctrong/md2html">md2html_py</a> 1.0.7</span>
         </td></tr>
     </table>
 </div>
@@ -78,6 +93,7 @@ src="../../layout/pict/next_page_h21px.png" alt="Next"></a><span id="reviewToggl
 
 <p style="font-size:44px;font-weight:bold;margin:0 0 30px 0;">Features</p>
 
+<div class="toc">
 <ul>
 <li><a href="#about-this-page">About this page</a></li>
 <li><a href="#footnotes">Footnotes</a></li>
@@ -86,20 +102,29 @@ src="../../layout/pict/next_page_h21px.png" alt="Next"></a><span id="reviewToggl
 <li><a href="#definition-lists">Definition Lists</a></li>
 <li><a href="#show-hide-content">Show-hide content</a></li>
 </ul>
+</div>
 <hr />
 <h1 id="about-this-page">About this page</h1>
 <p>This page demonstrates different Markdown features.</p>
 <hr />
 <h1 id="footnotes">Footnotes</h1>
 <p>Python-Markdown 3.4.4 documentation: <a href="https://python-markdown.github.io/extensions/footnotes/">Footnotes</a>.</p>
-<p>Footnote links are added by the following expression <code>[^1]</code> as in the example[^1].</p>
+<p>Footnote links are added by the following expression <code>[^1]</code> as in the example<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
 <p>The footnotes themselves are added by the expressions like <code>[^1]: The content of the footnote 1.</code>.
-They are added to the place marked by <code>///Footnotes Go Here///</code> text or in the page end.</p>
-<p>[^1]: The content of the footnote 1.</p>
-<p>///Footnotes Go Here///</p>
-<p>The second marker does not work. Here's the second link[^2]. And the footnote content will be
+They are added to the place marked by <code>&sol;//Footnotes Go Here///</code> text or in the page end.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>The content of the footnote 1.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>The content of the footnote 2.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+<p>The second marker does not work. Here's the second link<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. And the footnote content will be
 above, not below.</p>
-<p>[^2]: The content of the footnote 2.</p>
 <p>///Footnotes Go Here///</p>
 <p>For now it works only in the Python implementation.</p>
 <hr />
@@ -113,33 +138,70 @@ above, not below.</p>
 <p>The element attributes may be added by the expressions like <code>{.grey}</code>.</p>
 <table>
 <thead>
-<tr><th>Header title</th><th>Quite long header title</th><th>One more header title</th><th>Yet another header title</th></tr>
+<tr>
+<th>Header title</th>
+<th>Quite long header title</th>
+<th>One more header title</th>
+<th>Yet another header title</th>
+</tr>
 </thead>
 <tbody>
-<tr><td>Outset row 1</td><td class="grey">Cell content </td><td class="grey">Cell content</td><td>Cell content</td></tr>
-<tr><td>Outset row 2</td><td>Longer cell content</td><td>Even longer cell content</td><td>Cell content</td></tr>
+<tr>
+<td>Outset row 1</td>
+<td class="grey">Cell content</td>
+<td>Cell content{.grey}</td>
+<td>Cell content</td>
+</tr>
+<tr>
+<td>Outset row 2</td>
+<td>Longer cell content</td>
+<td>Even longer cell content</td>
+<td>Cell content</td>
+</tr>
 </tbody>
 </table>
 <p class="grey">This paragraph must be grey.</p>
 <p>For now it works only in the Python implementation.</p>
 <table>
 <thead>
-<tr><th>Header 1</th><th>Header 2</th><th>Header 3</th></tr>
+<tr>
+<th>Header 1</th>
+<th>Header 2</th>
+<th>Header 3</th>
+</tr>
 </thead>
 <tbody>
-<tr><td>Cell 1.1</td><td>Cell 1.2</td><td>Cell 1.3</td></tr>
-<tr><td rowspan="2">Cell 2.1 </td><td>Cell 2.2</td><td rowspan="2">Cell 2.3</td></tr>
-<tr><td>Cell 3.2</td><td class="hide">  </td><td class="hide"> </td></tr>
-<tr><td>Cell 3.1</td><td>Cell 3.2</td><td>Cell 3.3</td></tr>
+<tr>
+<td>Cell 1.1</td>
+<td>Cell 1.2</td>
+<td>Cell 1.3</td>
+</tr>
+<tr>
+<td rowspan="2">Cell 2.1</td>
+<td>Cell 2.2</td>
+<td rowspan="2">Cell 2.3</td>
+</tr>
+<tr>
+<td>Cell 3.2</td>
+<td class="hide">&nbsp;</td>
+<td class="hide">&nbsp;</td>
+</tr>
+<tr>
+<td>Cell 3.1</td>
+<td>Cell 3.2</td>
+<td>Cell 3.3</td>
+</tr>
 </tbody>
 </table>
 <hr />
 <h1 id="definition-lists">Definition Lists</h1>
-<p>Apple
-:   Pomaceous fruit of plants of the genus Malus in
-the family Rosaceae.</p>
-<p>Orange
-:   The fruit of an evergreen tree of the genus Citrus.</p>
+<dl>
+<dt>Apple</dt>
+<dd>Pomaceous fruit of plants of the genus Malus in
+the family Rosaceae.</dd>
+<dt>Orange</dt>
+<dd>The fruit of an evergreen tree of the genus Citrus.</dd>
+</dl>
 <p>For now it works only in the Python implementation.</p>
 <hr />
 <h1 id="show-hide-content">Show-hide content</h1>
@@ -147,32 +209,61 @@ the family Rosaceae.</p>
 <p>Задать вопросы к данным утверждениям.</p>
 <table>
 <thead>
-<tr><th>Утверждение</th><th>Перевод</th><th>Вопрос</th><th>Перевод</th></tr>
+<tr>
+<th>Утверждение</th>
+<th>Перевод</th>
+<th>Вопрос</th>
+<th>Перевод</th>
+</tr>
 </thead>
 <tbody>
-<tr><td>Радим у фирми.</td><td><span class="rv">Работаю в компании.  </span></td><td><span class="rv">Где радите?          </span></td><td>Где работаете?</td></tr>
-<tr><td>Читам досадну књигу.</td><td><span class="rv">Читаю скучную книгу. </span></td><td><span class="rv">Шта радиш?           </span></td><td>Что делаете?</td></tr>
-<tr><td>Ана не пије пиво.</td><td><span class="rv">Анна не пьет пиво.   </span></td><td><span class="rv">Да ли Ана пије пиво? </span></td><td>Анна пьет пиво?</td></tr>
-<tr><td>Немамо времена.</td><td><span class="rv">Нет времени.         </span></td><td><span class="rv">Да ли идете у шетњу? </span></td><td>Идете на прогулку?</td></tr>
-<tr><td>Он живи у Немачкој.</td><td><span class="rv">Он живет в Германии. </span></td><td><span class="rv">Где он живи?         </span></td><td>Где он живет?</td></tr>
+<tr>
+<td>Радим у фирми.</td>
+<td><span class="rv">Работаю в компании.  </span></td>
+<td><span class="rv">Где радите?          </span></td>
+<td>Где работаете?</td>
+</tr>
+<tr>
+<td>Читам досадну књигу.</td>
+<td><span class="rv">Читаю скучную книгу. </span></td>
+<td><span class="rv">Шта радиш?           </span></td>
+<td>Что делаете?</td>
+</tr>
+<tr>
+<td>Ана не пије пиво.</td>
+<td><span class="rv">Анна не пьет пиво.   </span></td>
+<td><span class="rv">Да ли Ана пије пиво? </span></td>
+<td>Анна пьет пиво?</td>
+</tr>
+<tr>
+<td>Немамо времена.</td>
+<td><span class="rv">Нет времени.         </span></td>
+<td><span class="rv">Да ли идете у шетњу? </span></td>
+<td>Идете на прогулку?</td>
+</tr>
+<tr>
+<td>Он живи у Немачкој.</td>
+<td><span class="rv">Он живет в Германии. </span></td>
+<td><span class="rv">Где он живи?         </span></td>
+<td>Где он живет?</td>
+</tr>
 </tbody>
 </table>
-<p>Предавање <b class="rv">почиње</b> у 9 сати. Већ је <b class="rv">почело</b>. <em>(почињати &mdash; почети)</em><br />
-<sup class="rv"><em>Лекция начинается в 9 часов. Она уже началась.</em></sup><br />
-Шта вама <b class="rv">доноси</b> срећу у животу? <b class="rv">Донео</b> сам теби чинију. <em>(доносити &mdash; донети)</em><br />
-<sup class="rv"><em>Что вам приносит счастье в жизни? Я принес тебе миску.</em></sup><br />
-Кога си <b class="rv">срела</b> у библиотеци? <b class="rv">Срећем</b> их сваки дан у библиотеци. <em>(сретати &mdash; срести)</em><br />
+<p>Предавање <b class="rv">почиње</b> у 9 сати. Већ је <b class="rv">почело</b>. <em>(почињати &mdash; почети)</em>  <br />
+<sup class="rv"><em>Лекция начинается в 9 часов. Она уже началась.</em></sup>  <br />
+Шта вама <b class="rv">доноси</b> срећу у животу? <b class="rv">Донео</b> сам теби чинију. <em>(доносити &mdash; донети)</em>  <br />
+<sup class="rv"><em>Что вам приносит счастье в жизни? Я принес тебе миску.</em></sup>  <br />
+Кога си <b class="rv">срела</b> у библиотеци? <b class="rv">Срећем</b> их сваки дан у библиотеци. <em>(сретати &mdash; срести)</em>  <br />
 <sup class="rv"><em>Кого ты встретила в библиотеке? Я встречаю их каждый день в библиотеке.</em></sup></p>
-<p>Купила сам вам (<i class="rv">датив</i>) на пијаци (<i class="rv">локатив</i>)
+<p>Купила сам вам (<i class="rv">датив</i>) на пијаци (<i class="rv">локатив</i>) 
 пуно кромпира (<i class="rv">генетив</i>).</p>
 <p>Не плашим се<sup>1</sup> великих проблема (<i class="rv">генетив</i>).</p>
 <p>Покажи ми (<i class="rv">датив</i>) трећу књигу (<i class="rv">акузатив</i>).</p>
-<p>Господине (<i class="rv">вокатив</i>), сутра идемо аутом (<i class="rv">инстр.</i>)
+<p>Господине (<i class="rv">вокатив</i>), сутра идемо аутом (<i class="rv">инстр.</i>) 
 у Рим (<i class="rv">акузатив</i>).</p>
 <p>Не свиђам се<sup>2</sup> твом брату (<i class="rv">датив</i>).</p>
 <p><sup>1</sup> <strong>плашити се</strong> &mdash; бояться.</p>
 <p><sup>2</sup> <strong>свидети се</strong> &mdash; понравиться, приглянуться.</p>
-
 <p>&nbsp;</p>
 <hr />
 
@@ -180,7 +271,8 @@ the family Rosaceae.</p>
 title="Previous: Multipage (dark)"><img src="../../layout/pict/previous_page.png"
 alt="Back"></a>
 <a href="fenced_blocks.html" title="Next: Fenced blocks"><img 
-src="../../layout/pict/next_page.png" alt="Next"></a></p>
+src="../../layout/pict/next_page.png" alt="Next"></a>
+</p>
 
 <script>
 function toggleSidebar() {

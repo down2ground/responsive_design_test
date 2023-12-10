@@ -26,6 +26,9 @@
 
         { "input": "sections/fenced_blocks.txt", "output": "sections/fenced_blocks.html",
             "title": "Fenced blocks", "page-flows": ["sections", "nav"] },
+            
+        { "input": "sections/fenced_blocks_dark.txt", "output": "sections/fenced_blocks_dark.html",
+            "title": "Fenced blocks (dark)", "page-flows": ["sections", "nav"] },
 
         { "input": "sections/content.txt", "output": "sections/singlepage.html", "title": "Single page",
             "page-flows": ["singlepage"],
@@ -92,6 +95,9 @@
                     "add-link-css": ["doc/layout/index.css"] }
         },
         "page-links": { "markers": ["page"] },
+        "include-file": [
+            { "markers": ["include_src"], "root-dir": "doc_src/", "recursive": true }
+        ],
         "page-variables": {}
     }
 }

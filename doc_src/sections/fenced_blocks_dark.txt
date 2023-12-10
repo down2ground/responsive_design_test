@@ -1,0 +1,4 @@
+<!--VARIABLES {"SORT_ORDER": "010", "code": "fenced_blocks_dark", "theme": "dark"}-->
+
+<!--include_src parts/fenced_blocks.txt-->
+

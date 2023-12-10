@@ -50,79 +50,21 @@
     margin-left: 5px;
 } 
 
-/* Fenced code labels, v. 1  */
+/* Alternative fenced code labels  */
 
-pre > code.language-lang, pre > code.language-wrapped-lang {
-  color: darkred;
-  background-color: beige;
-  border-color: darkred;
-}
-
-pre > code.language-dlang, pre > code.language-wrapped-dlang {
-  color: floralwhite;
-  background-color: darkslategray;
-  border-color: darkslategray;
-}
-
-pre > code.language-wrapped-lang, pre > code.language-wrapped-dlang {
-  white-space: pre-wrap;
-  word-break: break-word;
-  min-width: unset;
-}
-
-pre > code.language-lang::before, pre > code.language-wrapped-lang::before,
-pre > code.language-dlang::before, pre > code.language-wrapped-dlang::before
-{
-    display: block;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-weight: bold;
-    color: black;
-    /* text-align: right; */
-    position: relative;
-    /* background-color: #d0e0ed; */
-    top: -5px;
-    margin-top: -4px;
-    margin-left: -10px;
-    margin-right: -10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 3px;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    font-size: 0.8rem;
-}
-
-pre > code.language-lang::before, pre > code.language-wrapped-lang::before {
-    content: "Language";
-    color: darkred;
-    border-bottom-color: darkred;
-}
-
-pre > code.language-dlang::before, pre > code.language-wrapped-dlang::before {
-    content: "Dark language";
-    color: floralwhite;
-    border-bottom-color: floralwhite;
-}
-
-
-
-
-
-/* Fenced code labels, v. 2  */
-
-pre > code.language-js, pre > code.language-wrapped-js,
-pre > code.language-djs, pre > code.language-wrapped-djs {
+pre > code.language-somelang, pre > code.language-wrapped-somelang,
+pre > code.language-dsomelang, pre > code.language-wrapped-dsomelang {
   padding-top: 40px;
 }
 
-pre > code.language-wrapped-js, pre > code.language-wrapped-djs {
+pre > code.language-wrapped-somelang, pre > code.language-wrapped-dsomelang {
   white-space: pre-wrap;
   word-break: break-word;
   min-width: unset;
 }
 
-pre > code.language-js::before, pre > code.language-wrapped-js::before,
-pre > code.language-djs::before, pre > code.language-wrapped-djs::before
+pre > code.language-somelang::before, pre > code.language-wrapped-somelang::before,
+pre > code.language-dsomelang::before, pre > code.language-wrapped-dsomelang::before
 {
     display: block;
     position: absolute;
@@ -142,93 +84,27 @@ pre > code.language-djs::before, pre > code.language-wrapped-djs::before
     padding-bottom: 3px;
 }
 
-pre > code.language-js, pre > code.language-wrapped-js {
+pre > code.language-somelang, pre > code.language-wrapped-somelang {
   color: darkred;
   background-color: beige;
   border-color: darkred;
 }
 
-pre > code.language-djs, pre > code.language-wrapped-djs {
+pre > code.language-dsomelang, pre > code.language-wrapped-dsomelang {
   color: floralwhite;
   background-color: darkslategray;
   border-color: darkslategray;
 }
 
-pre > code.language-js::before, pre > code.language-wrapped-js::before {
-    content: "JavaScript";
-    /* color: darkred; */
+pre > code.language-somelang::before, pre > code.language-wrapped-somelang::before {
+    content: "Some language";
     border-color: darkred;
 }
 
-pre > code.language-djs::before, pre > code.language-wrapped-djs::before {
-    content: "Dark JavaScript";
-    /* color: floralwhite; */
+pre > code.language-dsomelang::before, pre > code.language-wrapped-dsomelang::before {
+    content: "Some language (dark)";
     border-color: darkslategray;
 }
-
-
-
-/* Fenced code labels, v. 3  */
-
-pre > code.language-py, pre > code.language-wrapped-py,
-pre > code.language-dpy, pre > code.language-wrapped-dpy {
-  padding-top: 40px;
-}
-
-pre > code.language-wrapped-py, pre > code.language-wrapped-dpy {
-  white-space: pre-wrap;
-  word-break: break-word;
-  min-width: unset;
-}
-
-pre > code.language-py::before, pre > code.language-wrapped-py::before,
-pre > code.language-dpy::before, pre > code.language-wrapped-dpy::before
-{
-    display: block;
-    position: absolute;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    
-    font-weight: bold;
-    text-decoration: underline;
-    
-    font-size: 0.8rem;
-    margin-top: -32px;
-    padding-right: 7px;
-    padding-bottom: 3px;
-}
-
-pre > code.language-py, pre > code.language-wrapped-py {
-  color: darkred;
-  background-color: beige;
-  border-color: darkred;
-}
-
-pre > code.language-dpy, pre > code.language-wrapped-dpy {
-  color: floralwhite;
-  background-color: darkslategray;
-  border-color: darkslategray;
-}
-
-pre > code.language-py::before, pre > code.language-wrapped-py::before {
-    content: "Python";
-}
-
-pre > code.language-dpy::before, pre > code.language-wrapped-dpy::before {
-    content: "Dark Python";
-}
-
-.blockSrc {
-    margin-bottom: 0;
-    font-size: 0.8rem;
-    font-weight: bold;
-    color: darkslategray;
-}
-
-.blockSrc+pre {
-    margin-top: 5px;
-}
-
-
 
 
 
