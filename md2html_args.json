@@ -52,6 +52,7 @@
             "show_source_link": true,
             "theme": "light",
             "add_more_prog_langs": true,
+            "add_powered_by": false, "ad_exec_version": true,
             "link_js": [{"src": "review.js", "defer": false}],
             "controls": ["<span id=\"reviewToggler\" class=\"header_image\" onclick=\"toggleReview();\" title=\"Скрыть/показать ответы\"></span>"]
         },
@@ -79,16 +80,12 @@
             ],
 
             "sections": { "groups": ["sidebar"] },
-            
+
             "singlepage": { "title": "Single-page", "groups": ["sidebar"] },
             "other_projects": { "title": "Other projects", "groups": ["sidebar"], "items": [
                 { "link": "project/flexible_demo.html", "title": "flexible_demo" }
-            ]},
-            
-            "useful_links": { "title": "Useful links", "groups": ["sidebar"], "items": [
-                { "link": "https://daringfireball.net/projects/markdown/", "title": "Markdown", "external": true },
-                { "link": "https://github.com/arctrong/md2html", "title": "md2html", "external": true }
             ]}
+            
         },
         "index": {"index": {"output": "index_page.html", "title": "Index", "index-cache": "index_cache.json", 
                     "index-cache-relative": true, "letters": true, "letters-block": true,
